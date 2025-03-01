@@ -1,0 +1,95 @@
+.helps-section {
+    padding: 50px 20px;
+    overflow: hidden;
+
+}
+
+.helps-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.helps-header h3 {
+    font-size: 3.5rem;
+    background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.helps-header p {
+    font-size: 1.2rem;
+    color: #fafafa;
+}
+
+.helps-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.helps-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #263238;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.helps-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.helps-image img {
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.helps-content {
+    flex: 1;
+}
+
+.helps-content h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.helps-content p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.helps-content button {
+    background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.helps-content button:hover {
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .helps-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helps-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .helps-image img {
+        max-width: 100%;
+    }
+}

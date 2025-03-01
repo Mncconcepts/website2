@@ -1,0 +1,139 @@
+.services-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .services-section h2 span{
+    font-size: 70px;
+    font-weight: 600;
+    background: linear-gradient(287deg, #69ec7f 50.49%, #c3cf18 95.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .quest h1{
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: bold;
+  }
+  .quest p{
+    text-align: center;
+  }
+  .quest .reach-button{
+    text-align: center;
+    border-radius: 0%;
+  }
+  
+  /* Title and Intro */
+  .services-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .services-intro {
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b3b3b3;
+  }
+  
+  /* Services container */
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .service-card {
+    display: flex;
+    align-items: center;
+    background-color: #e4cfcf13;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    color: #f0a500;
+  }
+  
+  .service-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-align: start;
+  }
+  
+  .service-content p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin: 0;
+    text-align: start;
+  }
+  
+  /* Responsiveness for medium screens */
+  @media (max-width: 768px) {
+    .services-container {
+      gap: 1rem;
+    }
+  
+    .service-card {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+    }
+  
+    .service-icon {
+      margin-bottom: 1rem;
+    }
+  
+    .service-content h3 {
+      font-size: 1.1rem;
+    }
+  
+    .service-content p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Responsiveness for small screens */
+  @media (max-width: 480px) {
+    .services-title {
+      font-size: 2rem;
+    }
+  
+    .services-intro {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  
+    .service-card {
+      padding: 1rem;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .service-icon {
+      font-size: 2rem;
+    }
+  
+    .service-content h3 {
+      font-size: 1rem;
+    }
+  
+    .service-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
