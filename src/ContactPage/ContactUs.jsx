@@ -128,7 +128,9 @@ const ContactUs = () => {
                         <i className="fas fa-headset"></i>
                         <h4>Customer support</h4>
                         <p>Have any issue, reach us out we are ready to help you</p>
+                        <Link to="/support">
                         <button>Learn more</button>
+                        </Link>
                     </div>
                     <div data-aos="zoom-in" className="help-card">
                         <i className="fas fa-question-circle"></i>
