@@ -143,15 +143,15 @@ const ContactUs = () => {
 
             {/* ✅ Ticket Form Modal */}
             {showTicketForm && (
-                <div className="tickets-modal">
-                    <div className="tickets-card">
+                <div className="ticket-modal">
+                    <div className="ticket-card">
                         <h3>Submit a Ticket</h3>
                         <form onSubmit={handleSubmit}>
                             <input type="text" name="name" placeholder="Your Name" value={ticketDetails.name} onChange={handleInputChange} required />
                             <input type="email" name="email" placeholder="Your Email" value={ticketDetails.email} onChange={handleInputChange} required />
                             <input type="text" name="subject" placeholder="Subject" value={ticketDetails.subject} onChange={handleInputChange} required />
                             <textarea name="message" placeholder="Describe your issue" value={ticketDetails.message} onChange={handleInputChange} required />
-                            <div className="tickets-buttons">
+                            <div className="ticket-buttons">
                                 <button type="submit" className="btn-submit">Submit</button>
                                 <button type="button" className="btn-cancel" onClick={() => setShowTicketForm(false)}>Cancel</button>
                             </div>
@@ -162,8 +162,8 @@ const ContactUs = () => {
 
             {/* Ticket Support Popup */}
             {showPopup && (
-                <div className="popups-overlay">
-                    <div className="popups-card">
+                <div className="popup-overlay">
+                    <div className="popup-card">
                         <h3>Submit a Support Ticket</h3>
                         <form onSubmit={handleSubmit}>
                             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
@@ -178,9 +178,9 @@ const ContactUs = () => {
 
             {/* ✅ Success Message Popup */}
             {showSuccessPopup && (
-                <div className="successs-modal">
-                    <div className="successs-card">
-                        <div className="checkmarks">
+                <div className="success-modal">
+                    <div className="success-card">
+                        <div className="checkmark">
                             <svg viewBox="0 0 52 52">
                                 <circle cx="26" cy="26" r="25" fill="none" />
                                 <path fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" d="M14 27l7 7 16-16" />
