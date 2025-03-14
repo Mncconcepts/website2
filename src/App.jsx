@@ -28,6 +28,10 @@ function App() {
   }, [location, navigate]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);  
+
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
