@@ -13,6 +13,7 @@ function App() {
   const [user, setUser] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
+  const [refresh, setRefresh] = useState(0);
 
   const handleLogin = (profile) => {
     setUser(profile);
@@ -28,8 +29,8 @@ function App() {
   }, [location, navigate]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);  
+    setRefresh((prev) => prev + 1);
+  }, [location]);  
 
   useEffect(() => {
     AOS.init({
