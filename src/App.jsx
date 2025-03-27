@@ -42,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <div key={refresh} className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
       <Routes>
       
         <Route path="/signup" element={<SignUp onLogin={handleLogin} />} />
