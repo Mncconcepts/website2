@@ -13,7 +13,6 @@ function App() {
   const [user, setUser] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
-  const [refresh, setRefresh] = useState(0);
 
   const handleLogin = (profile) => {
     setUser(profile);
@@ -29,8 +28,8 @@ function App() {
   }, [location, navigate]);
 
   useEffect(() => {
-    setRefresh((prev) => prev + 1);
-  }, [location]);  
+    window.scrollTo(0, 0);
+  }, [location.pathname]);  
 
   useEffect(() => {
     AOS.init({
@@ -42,7 +41,7 @@ function App() {
   }, []);
 
   return (
-    <div key={refresh} className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
       <Routes>
       
         <Route path="/signup" element={<SignUp onLogin={handleLogin} />} />
