@@ -1,5 +1,6 @@
 import React from 'react';
 import './Reviews.css';
+import { Link } from 'react-router-dom';
 
 const reviews = [
     { id: 1, name: 'Hillary', text: 'Amazing service! Highly recommended.', image: '/user1.png', rating: 5 },
@@ -26,6 +27,17 @@ const Reviews = () => {
                     </div>
                 ))}
             </div>
+            <div className="quest">
+                    <div quest-text>
+                        <h1>Need A Website?</h1>
+                        <p>Reach us out with the button below</p>
+                        <div className="reach-button">
+                            <Link to="/message">
+                                <button className="btn btn-primary">Contact Us</button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
         </div>
     );
 };

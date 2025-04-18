@@ -1,98 +1,99 @@
 .faq-section {
-    padding: 50px 20px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  
-  .faq-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 5rem;
-  }
-  
+  padding: 50px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 30px 20px;
+  max-width: 1300px;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5rem;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faq-questions {
+  flex: 2;
+  min-width: 300px;
+}
+
+.faq-item {
+  background-color: #d4bfbf15;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item:hover {
+  background-color: #333;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.contact-box {
+  flex: 1;
+  background-color: #332c2c65;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-box p {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.contact-box button {
+  background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-box button:hover {
+  background-color: #ff7f3f;
+}
+
+@media (max-width: 768px) {
   .faq-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .faq-questions {
-    flex: 2;
-    min-width: 300px;
-  }
-  
-  .faq-item {
-    background-color: #d4bfbf15;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
   }
-  
-  .faq-item:hover {
-    background-color: #333;
+
+  .faq-questions {
+    flex: 1 100%;
   }
-  
-  .faq-item.active .faq-answer {
-    display: block;
-  }
-  
-  .faq-answer {
-    display: none;
-    margin-top: 10px;
-    color: #ffffff;
-  }
-  
+
   .contact-box {
-    flex: 1;
-    background-color: #332c2c65;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 5rem;
+    margin-top: 20px;
   }
-  
-  .contact-box h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-  }
-  
-  .contact-box p {
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    color: #bbb;
-  }
-  
-  .contact-box button {
-    background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-box button:hover {
-    background-color: #ff7f3f;
-  }
-  
-  @media (max-width: 768px) {
-    .faq-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .faq-questions {
-      flex: 1 100%;
-    }
-  
-    .contact-box {
-      margin-top: 20px;
-    }
-  }
-  
+}

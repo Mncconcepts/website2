@@ -21,6 +21,7 @@ import Support from './Components/Navbar/Support.jsx';
 import Message from './Components/Navbar/Message.jsx';
 import Reviews from './Components/Navbar/Reviews.jsx';
 import Home from './Home/Home.jsx';
+import Loader from './Components/Navbar/Loader.jsx';
 
 
 const router = createHashRouter([
@@ -65,6 +66,10 @@ const router = createHashRouter([
       {
         path: "reviews",
         element: <Reviews/>
+      },
+      {
+        path: "/loader",
+        element: <Loader/>
       }
 
     ],

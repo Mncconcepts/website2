@@ -48,7 +48,7 @@ const Hero = () => {
                 <h3><span>Web Developer | UIUX Designer</span></h3>
                 <div className="hero-action">
                     <button onClick={() => handleNavigation('/contact')} className="clickable hero-connect">
-                        Connect with Us
+                        Connect with Me
                     </button>
                     <button onClick={handleResumeDownload} className="hero-resume">
                         Download Resume
@@ -89,6 +89,7 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
+
         </section>
 
     );

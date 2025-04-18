@@ -5,8 +5,10 @@ const Project = () => {
   const projects = [
     { id: 1, title: 'ZenixStore', description: 'Complete e-comerce website', image: '/assets/project1.png', liveLink: 'https://zenix-shop-mall.vercel.app', githubLink: 'https://github.com/Mncconcepts/zenix-shop-mall' },
     { id: 2, title: 'Wavertm Blog', description: 'responsive blog web application.', image: '/assets/project3.png', liveLink: 'https://waverblog.vercel.app', githubLink: 'https://github.com/Mncconcepts/waverblog' },
-    { id: 3, title: 'Chokma Market Place', description: 'Complete Payment application.', image: '/assets/project4.png', liveLink: '', githubLink: 'https://www.linkedin.com/posts/miracle-nweze-52aab330b_simplicity-and-clarity-website-design-activity-7264215608576167936-Be55' },
-    { id: 4, title: 'Paywith-Pi', description: 'multi dynamic website and vast pages', image: '/assets/project11.png', liveLink: 'https://pay-with-pi.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pay-with-pi' },
+    { id: 3, title: 'Chokma Market Place', description: 'Complete Payment web application.', image: '/assets/project4.png', liveLink: '', githubLink: 'https://www.linkedin.com/posts/miracle-nweze-52aab330b_simplicity-and-clarity-website-design-activity-7264215608576167936-Be55' },
+    { id: 4, title: 'Paywith-Pi', description: 'payment web app with multi dynamic website and vast pages', image: '/assets/project11.png', liveLink: 'https://paywith-pi.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pay-with-pi' },
+    { id: 4, title: 'Pearlz-store', description: 'A shopify ecomerce skin care website', image: '/second1.png', liveLink: 'https://pearlz-store.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pearlz' },
+    { id: 4, title: 'Edu-Hub', description: 'multi dynamic website and vast pages', image: '/help3.jpg', liveLink: '', githubLink: '' },
     { id: 5, title: 'Emy Baking And Pasteries', description: 'resturant website.', image: '/assets/project6.png', liveLink: '', githubLink: 'https://www.linkedin.com/posts/miracle-nweze-52aab330b_on-it-again-one-of-the-website-i-created-activity-7246301444914442240-K-aK?' },
     { id: 6, title: 'Emy App Design', description: 'resturant web app design.', image: '/assets/project5.png', liveLink: '', githubLink: 'https://www.linkedin.com/posts/miracle-nweze-52aab330b_emy-app-is-a-few-steps-away-design-part-activity-7256985993646325761-k2ob' },
     { id: 6, title: 'Reina Events Logo', description: 'logo design for reinas event.', image: '/assets/project8.png', liveLink: '', githubLink: '' },

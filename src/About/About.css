@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  margin: 80px 170px;
-  overflow-y: auto;
+  margin: 80px 50px;
   overflow-x: hidden;
+  max-width: 1200px;
 }
 
 .about-title h1 {
