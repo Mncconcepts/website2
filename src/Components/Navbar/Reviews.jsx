@@ -13,7 +13,7 @@ const Reviews = () => {
     return (
         <div className='reviews-container'>
             <div data-aos="fade-down" className='reviews-header'>
-                <h1>What Our Clients Says</h1>
+                <h1>What Our Clients Say</h1>
             </div>
             <div className='reviews-slider'>
                 {reviews.map((review) => (
@@ -28,7 +28,7 @@ const Reviews = () => {
                 ))}
             </div>
             <div className="quest">
-                    <div quest-text>
+                    <div data-aos="fade-down" quest-text>
                         <h1>Need A Website?</h1>
                         <p>Reach us out with the button below</p>
                         <div className="reach-button">

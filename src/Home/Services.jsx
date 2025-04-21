@@ -39,8 +39,8 @@ const Services = () => {
             icon: faPaintBrush,
         },
         {
-            title: "Brand Identity design",
-            description: "Creating seamless, intuitive app interfaces that engage users and drive meaningful interactions.",
+            title: "Brand Identity Design",
+            description: "Crafting cohesive visual identities that reflect your values, connect with your audience, and leave a lasting impression.",
             icon: faMobileAlt,
         },
         {
@@ -84,7 +84,7 @@ const Services = () => {
                     <p>Reach us out with the button below</p>
                     <div className="reach-button">
                         <Link to="/message">
-                            <button className="btn btn-primary">Contact Us</button>
+                            <button className="btn btn-primary w-50">Contact Us</button>
                         </Link>
                     </div>
                 </div>

@@ -1,31 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
 
 const About = () => {
-  // State to store the values for achievements
   const [experience, setExperience] = useState(0);
   const [jobs, setJobs] = useState(0);
   const [clients, setClients] = useState(0);
+  const achievementsRef = useRef(null);
+  const hasAnimated = useRef(false);
 
-  // Function to animate the counting of achievements
   const countUp = (target, setter, duration) => {
     let start = 0;
-    const step = target / (duration / 15); // Increment every 50ms
+    const step = target / (duration / 15);
     const interval = setInterval(() => {
       start += step;
       setter(Math.floor(start));
       if (start >= target) {
+        setter(target);
         clearInterval(interval);
       }
-    }, 50);
+    }, 15);
   };
 
-  // useEffect hook to trigger countUp when the component mounts
   useEffect(() => {
-    countUp(2, setExperience, 2000);
-    countUp(100, setJobs, 2000);
-    countUp(15, setClients, 2000);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated.current) {
+          hasAnimated.current = true; // prevent rerun
+          countUp(2, setExperience, 2000);
+          countUp(100, setJobs, 2000);
+          countUp(15, setClients, 2000);
+        }
+      },
+      { threshold: 0.9 }
+    );
+  
+    const section = achievementsRef.current;
+    if (section) observer.observe(section);
+    return () => {
+      if (section) observer.unobserve(section);
+    };
   }, []);
 
   return (
@@ -72,7 +86,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about-achievements">
+      <div className="about-achievements" ref={achievementsRef}>
         <div className="about-achievement">
           <h1>{experience}+</h1>
           <p>YEARS OF EXPERIENCE</p>

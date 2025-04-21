@@ -169,7 +169,8 @@
   }
 
   .nav-menu li {
-    font-size: 16px;
+    font-size: 20px;
+    margin-left: 1.6rem;
   }
 
   .nav-connect {

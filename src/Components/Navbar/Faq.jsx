@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Faq.css';
-import { Link } from 'react-router-dom';
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [redirectMsg, setRedirectMsg] = useState(false);
+  const navigate = useNavigate();
+
+
 
   const faqs = [
     {
@@ -23,15 +28,25 @@ const FAQSection = () => {
       answer: "AI is revolutionizing coding with tools like GitHub Copilot and ChatGPT, automating repetitive tasks, improving debugging, and enhancing software testing.",
     },
     {
-      question: "What’s the future of mobile app development?",
+      question: "What is the future of mobile app development?",
       answer: "Cross-platform frameworks like Flutter and React Native, progressive web apps (PWAs), and AI-driven personalization are shaping the future of mobile development.",
     },
   ];
-  
+
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  const handleRedirect = () => {
+    setLoading(true);
+    setRedirectMsg(true);
+
+    setTimeout(() => {
+      navigate('/contact');
+    }, 2000);
+  };
+
 
   return (
     <div className="faq-section">
@@ -52,10 +67,21 @@ const FAQSection = () => {
         </div>
         <div className="contact-box">
           <h3>Do you have more questions?</h3>
-          <p>Web design and development updates, Meet the right platform to help you realize and stay on trend.</p>
-          <Link to="/contact">
-          <button>Send a Direct Mail</button>
-          </Link>
+          <p>
+            Web design and development updates, Meet the right platform to help you realize and stay on trend.
+          </p>
+
+          <button onClick={handleRedirect} disabled={loading}>
+            {loading ? (
+              <span className="spinner"></span>
+            ) : (
+              'Send a Direct Mail'
+            )}
+          </button>
+
+          {redirectMsg && !loading && (
+            <p className="redirect-msg">Redirecting to contact section...</p>
+          )}
         </div>
       </div>
     </div>

@@ -143,7 +143,7 @@ const ContactUs = () => {
                 </div>
             </div>
 
-            {/* ✅ Ticket Form Modal */}
+            {/* Ticket Form Modal */}
             {showTicketForm && (
                 <div className="ticket-modal">
                     <div className="ticket-card">
@@ -178,7 +178,7 @@ const ContactUs = () => {
                 </div>
             )}
 
-            {/* ✅ Success Message Popup */}
+            {/* Success Message Popup */}
             {showSuccessPopup && (
                 <div className="success-modal">
                     <div className="success-card">

@@ -40,7 +40,7 @@ const Project = () => {
       </header>
 
       <section className="projects">
-        <h2 className='mt-4 mb-5' data-aos="fade-right">My Recent Projects</h2>
+        <h2 className='mt-4 mb-5' data-aos="fade-right">PROJECT-FOLIO</h2>
         <div className="project-grid">
           {projects.map((project) => (
             <div data-aos="zoom-in" className="project-card" key={project.id}>
