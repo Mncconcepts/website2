@@ -15,7 +15,7 @@ import "./Service.css";
 const services = [
     {
         title: "Github",
-        description: "manage, track, and collaborate on code efficiently",
+        description: "manage, track, collaborate on code",
         icon: faGithub,
     },
     {

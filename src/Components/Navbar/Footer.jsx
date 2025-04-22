@@ -80,7 +80,7 @@ const Footer = () => {
               placeholder="Enter your email"
               required
             />
-            <button className='button' type="button" onClick={handleSubscribe}>
+            <button className='contact-btn' type="button" onClick={handleSubscribe}>
               Subscribe
             </button>
           </form>

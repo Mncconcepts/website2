@@ -55,6 +55,7 @@
 .nav-menu ul {
   padding: 0;
   margin: 0;
+  margin-top: 3.5rem;
 }
 
 .nav-menu li {
@@ -67,24 +68,23 @@
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
 .nav-menu li a:hover {
-  color: #f39c12;
+  color: #ddc332;
 }
 
-.nav-connect {
-  padding: 10px 20px;
-  background-color: #f39c12;
-  border-radius: 2rem;
-  cursor: pointer;
-  font-weight: bold;
+.nav-connect-container .nav-connect {
+  background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
   color: white;
-  transition: background-color 0.3s ease;
-}
-
-.nav-connect:hover {
-  background-color: #d27a0c;
+  padding: 0.5rem 5rem;
+  border: none;
+  margin-left: 1.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .hamburger {
@@ -127,6 +127,7 @@
 
   .nav-connect {
     display: none;
+    text-decoration: none;
   }
 }
 
@@ -177,5 +178,74 @@
     padding: 8px 16px;
     font-size: 14px;
   }
+  .custom-logout-btn {
+    background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-left: -3rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+  }
 }
+@media (max-width: 480px) {
+  .navbar-left {
+    padding-left: 10px;
+  }
+
+  .navbar-left img{
+    width: 60px; 
+    height: 60px;
+    margin: 0;
+    margin-left: -1.7rem;
+  }
+
+  .nav-menu li {
+    font-size: 20px;
+    margin-left: 1.6rem;
+  }
+
+  .nav-connect {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .custom-logout-btn {
+    background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-left: -3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+  }
+}
+
+.custom-logout-btn {
+  background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+  color: white;
+  padding: 0.5rem 3rem;
+  border: none;
+  margin-left: 1.9rem;
+  margin-right: -7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.custom-logout-btn:hover {
+  background-color: #5acf6e;
+}
+
+.custom-logout-btn:active {
+  transform: scale(0.95);
+}
+
+.custom-logout-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
 

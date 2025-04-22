@@ -84,7 +84,7 @@ const About = () => {
             In addition to web services, we've also successfully completed a wide array of high-quality graphic design projects for top-tier brands, enhancing their visual storytelling and marketing appeal. From user-friendly e-commerce platforms to interactive business websites, our work continues to set the standard for innovation, quality, and results in the ever-evolving world of web and graphic design.
           </p>
 
-          <button className='btn btn-primary' onClick={() => setShowForm(true)}>
+          <button className='contact-btn' onClick={() => setShowForm(true)}>
             Book A Call With Us Now
           </button>
         </div>

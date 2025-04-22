@@ -41,24 +41,24 @@ const Hero = () => {
 
     return (
         <section className="hero">
-            <div data-aos="fade-down" className="hero-text">
+            <div data-aos="fade-down" className="hero-text ms-2">
                 <h1>
-                    <span>Hi, Welcome To <br /> Mncconcepts. <br /></span>
+                    <span>Welcome To <br /> Mncconcepts. <br /></span>
                 </h1>
-                <h3><span>Web Developer | UIUX Designer</span></h3>
+                <h3 className='ms-1'><span>Web Developer | UIUX Designer | Graphics</span></h3>
                 <div className="hero-action">
-                    <button onClick={() => handleNavigation('/contact')} className="clickable hero-connect">
+                    <button onClick={() => handleNavigation('/contact')} className="ms-2 clickable hero-connect">
                         Connect with Me
                     </button>
-                    <button onClick={handleResumeDownload} className="hero-resume">
+                    <button onClick={handleResumeDownload} className="ms-2 hero-resume">
                         Download Resume
                     </button>
                 </div>
             </div>
 
-            {/* Image Section with Rotating Icons */}
-            <div className="image-container">
-                <div data-aos="fade-up" className="hero-image">
+            <div data-aos="fade-up" className="hero-image-wrapper">
+                <div className="glow-circles"></div> {/* Glowing animated circles */}
+                <div className="hero-image">
                     <img src="/assets/profile3.jpg" alt="Your Brand" />
                     <div className="tech-icons">
                         <FaReact className="icon react" />

@@ -14,7 +14,7 @@ const Support = () => {
       <div className="helps-cards">
         <div data-aos="fade-up" className="helps-card">
           <div className="helps-image">
-            <img src="/help1.jpg" alt="Customer Support" />
+            <img src="/profile3.jpg" alt="Customer Support" />
           </div>
           <div className="helps-content">
             <h4>Customer Support</h4>
@@ -39,14 +39,14 @@ const Support = () => {
             <button>Submit a Ticket</button>
           </div>
           <div className="helps-image">
-            <img src="/help2.jpg" alt="Ticket Support" />
+            <img src="/profile4.png" alt="Ticket Support" />
           </div>
         </div>
 
         {/* FAQ */}
         <div data-aos="fade-up" className="helps-card">
           <div className="helps-image">
-            <img src="/help3.jpg" alt="FAQ" />
+            <img src="/profile5.png" alt="FAQ" />
           </div>
           <div className="helps-content">
             <h4>FAQ</h4>

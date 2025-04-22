@@ -18,32 +18,36 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <Link to="/home">
-          <img src="/logo2.png" alt="Logo" />
+          <img className='logo' src="/logo2.png" alt="Logo" />
         </Link>
       </div>
       <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul>
           <li onClick={handleMenuClose} key="home">
-            <Link to="/home">Home</Link>
+            <Link to="/home">HOME</Link>
           </li>
           <li onClick={handleMenuClose} key="about">
-            <Link to="/about">About</Link>
+            <Link to="/about">ABOUT</Link>
           </li>
           <li onClick={handleMenuClose} key="services">
-            <Link to="/services">Services</Link>
+            <Link to="/services">SERVICES</Link>
           </li>
           <li onClick={handleMenuClose} key="projects">
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">PROJECTS</Link>
           </li>
           <li onClick={handleMenuClose} key="contact">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">CONTACT</Link>
           </li>
           <li onClick={handleMenuClose} key="faq">
-            <Link to="/faq">Faq</Link>
+            <Link to="/faq">FAQ</Link>
           </li>
-          <li onClick={handleMenuClose} key="LogOut">
-            <Link to="/logout">LogOut</Link>
-          </li>
+          <button
+            className="custom-logout-btn block lg:hidden"
+            onClick={handleMenuClose}
+            key="LogOut"
+          >
+            <Link to="/logout">Logout</Link>
+          </button>
         </ul>
       </div>
 

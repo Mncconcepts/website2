@@ -79,12 +79,12 @@ const Services = () => {
                 ))}
             </div>
             <div className="quest">
-                <div quest-text>
+                <div className="quest-text">
                     <h1>Need A Website?</h1>
                     <p>Reach us out with the button below</p>
                     <div className="reach-button">
                         <Link to="/message">
-                            <button className="btn btn-primary w-50">Contact Us</button>
+                            <button className="contact-btn">Contact Us</button>
                         </Link>
                     </div>
                 </div>
