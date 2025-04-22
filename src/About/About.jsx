@@ -159,7 +159,7 @@ const About = () => {
           </video>
         </div>
         <Link to='/projects'>
-          <button className='contact-btn' type='submit'>PROJECT-FOLIO</button>
+          <button className='contact-btn w-100' type='submit'>PROJECT-FOLIO</button>
         </Link>
       </div>
     </div>

@@ -105,6 +105,18 @@
     .service-content p {
       font-size: 0.85rem;
     }
+    .contact-btn {
+      background-color: #1d4ed8;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      width: 150%; 
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
   }
   
   /* Responsiveness for small screens */
@@ -135,13 +147,25 @@
     .service-content p {
       font-size: 0.8rem;
     }
+    .contact-btn {
+      background-color: #1d4ed8;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      width: 100%; 
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
   }
   .contact-btn {
     background-color: #1d4ed8;
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     border: none;
-    width: 100%; 
+    width: 80%; 
     font-size: 1rem;
     font-weight: 600;
     border-radius: 0;
