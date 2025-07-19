@@ -23,7 +23,7 @@ const Footer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await handleFormSubmit(e); 
+    await handleFormSubmit(e);
 
     if (state.succeeded) {
       setShowPopup(true);
@@ -55,6 +55,15 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        <a
+          href="https://wa.me/2349020495756"
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
+        </a>
 
         {showPopup && (
           <div className="popups">

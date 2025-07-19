@@ -184,3 +184,29 @@
     transform: scale(1);
   }
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0bd455;
+  color: white;
+  font-size: 28px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow:
+    0 0 8px rgba(29, 161, 77, 0.8),
+    0 0 16px rgba(24, 138, 65, 0.5),
+    0 0 24px rgba(29, 168, 80, 0.3);
+  z-index: 10000;
+  transition: transform 0.3s ease;
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.15);
+  background-color: #1ebc59;
+}

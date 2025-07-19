@@ -43,9 +43,9 @@ const Hero = () => {
         <section className="hero">
             <div data-aos="fade-down" className="hero-text ms-2">
                 <h1>
-                    <span>Welcome To <br /> Mncconcepts. <br /></span>
+                    <span>Building Experiences<br />That Works <br /></span>
                 </h1>
-                <h3 className='ms-1'><span>Web Developer | UIUX Designer </span></h3>
+                <h3 className='ms-1'><span>From wireframe to launch, We bring ideas to life with clean code and bold design.</span></h3>
                 <div className="hero-action">
                     <button onClick={() => handleNavigation('/contact')} className="ms-2 clickable hero-connect">
                         Send Your Messages
@@ -58,8 +58,6 @@ const Hero = () => {
 
             <div data-aos="fade-up" className="hero-image-wrapper">
                 <div className="glow-circles"></div> {/* Glowing animated circles */}
-                <div className="hero-image">
-                    <img src="/assets/profile3.jpg" alt="Your Brand" />
                     <div className="tech-icons">
                         <FaReact className="icon react" />
                         <SiVite className="icon vite" />
@@ -73,6 +71,9 @@ const Hero = () => {
                         <SiAdobeillustrator className="icon illustrator" />
                         <FaGithub className="icon github" />
                     </div>
+                <div className="hero-image">
+                    <img src="/assets/profile3.jpg" alt="Your Brand" />
+                
                 </div>
             </div>
 

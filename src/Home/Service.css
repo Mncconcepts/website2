@@ -9,7 +9,7 @@
 }
 
 .services-section h1 span {
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
   background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
@@ -121,8 +121,9 @@
   }
 
   .services-section h1 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    text-align: start;
     margin-bottom: 2rem;
     background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
     background-clip: text;

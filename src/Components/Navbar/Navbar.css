@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #18181b;
+  background: linear-gradient(135deg, rgba(24, 24, 27, 0.7), rgba(36, 36, 42, 0.5));
   color: white;
   position: fixed;
   top: 0;
@@ -12,8 +12,8 @@
   z-index: 1000;
   box-sizing: border-box;
   flex-wrap: wrap;
-  overflow-y: auto;
-  overflow-x: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-left {
@@ -28,7 +28,7 @@
   width: 100px;
   height: 50px;
   object-fit: contain;
-  margin: 0; 
+  margin: 0;
 }
 
 .nav-menu {
@@ -39,13 +39,16 @@
   margin: 0;
   position: fixed;
   top: 0;
-  left: -100%; 
+  left: -100%;
   width: 250px;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.616); 
-  backdrop-filter: blur(10px); 
-  transition: left 0.3s ease; 
-  z-index: 999; 
+  background: linear-gradient(135deg, rgba(17, 17, 19, 0.959), rgba(22, 22, 26, 0.979));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+  transition: left 0.3s ease;
+  z-index: 999;
 }
 
 .nav-menu.open {
@@ -107,7 +110,7 @@
 
 @media (max-width: 1024px) {
   .hamburger {
-    display: flex; 
+    display: flex;
     margin-left: auto;
   }
 
@@ -133,14 +136,14 @@
 
 @media (min-width: 1025px) {
   .nav-menu {
-    position: static; 
-    left: 0; 
-    flex-direction: row; 
-    background: transparent; 
-    backdrop-filter: none; 
-    width: auto; 
-    height: auto; 
-    padding: 0; 
+    position: static;
+    left: 0;
+    flex-direction: row;
+    background: transparent;
+    backdrop-filter: none;
+    width: auto;
+    height: auto;
+    padding: 0;
   }
 
   .nav-menu ul {
@@ -148,7 +151,7 @@
   }
 
   .nav-menu li {
-    margin: 0 15px; 
+    margin: 0 15px;
     font-size: 20px;
   }
 
@@ -164,15 +167,16 @@
   }
 
   .navbar-left img {
-    width: 60px; 
+    width: 60px;
     height: 60px;
-    margin: 0; 
+    margin: 0;
   }
 
   .nav-menu li {
     font-size: 20px;
     margin-left: 1.6rem;
   }
+
   .nav-menu ul {
     padding: 0;
     margin: 0;
@@ -183,6 +187,7 @@
     padding: 8px 16px;
     font-size: 14px;
   }
+
   .custom-logout-btn {
     background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
     color: white;
@@ -196,13 +201,14 @@
     transition: transform 0.1s ease, background-color 0.3s ease;
   }
 }
+
 @media (max-width: 480px) {
   .navbar-left {
     padding-left: 10px;
   }
 
-  .navbar-left img{
-    width: 60px; 
+  .navbar-left img {
+    width: 60px;
     height: 60px;
     margin: 0;
     margin-left: -1.7rem;
@@ -212,6 +218,7 @@
     font-size: 20px;
     margin-left: 1.6rem;
   }
+
   .nav-menu ul {
     padding: 0;
     margin: 0;
@@ -222,6 +229,7 @@
     padding: 8px 16px;
     font-size: 14px;
   }
+
   .custom-logout-btn {
     background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
     color: white;
@@ -260,5 +268,3 @@
   color: inherit;
   text-decoration: none;
 }
-
-
