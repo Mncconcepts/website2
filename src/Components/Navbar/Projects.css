@@ -13,7 +13,8 @@
   
   .header-content h1 {
     margin: 0;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-top: 5rem;
     font-weight: bold;
     background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
     background-clip: text;
