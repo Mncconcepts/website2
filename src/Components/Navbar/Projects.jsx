@@ -23,7 +23,7 @@ const Project = () => {
     <div className="portfolio-container">
       <header className="header">
         <div className="header-content">
-          <h1 data-aos="fade-down" className=''>Recent Projects We Have Covered</h1>
+          <h1 data-aos="fade-down">Recent Projects</h1>
           <div data-aos="fade-right" className="skills">
             <span>GitHub</span>
              <span>React.js</span>

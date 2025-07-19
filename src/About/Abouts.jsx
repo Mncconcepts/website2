@@ -76,7 +76,7 @@ const About = () => {
       <div className='before-hero'>
         <div className='before-hero-text'>
           <div data-aos="fade-down">
-            <h1> We Do More Than Just A Website</h1>
+            <h1>More Than Just Websites</h1>
           </div>
           <p className='mb-5'>
             At our core, we specialize in developing and designing visually stunning, highly functional websites and expansive web applications tailored to meet the needs of businesses across all sectors. Our mission is to ensure that every brand we work with stands out in a competitive digital landscape. Whether it's a startup looking to establish an online presence or an established company aiming to elevate its digital branding, we bring ideas to life with precision, creativity, and technical excellence. <br /><br />

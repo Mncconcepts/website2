@@ -4,8 +4,9 @@
     color: #ffffff;
   }
   .services-section h2 span{
-    font-size: 3.5rem;
+    font-size: 2.9rem;
     margin-bottom: 4rem;
+    margin-top: 5rem;
     font-weight: 600;
     background: linear-gradient(287deg, #69ec7f 50.49%, #c3cf18 95.28%);
     background-clip: text;

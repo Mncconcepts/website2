@@ -57,7 +57,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-skills mb-5">
-            <h2 className='tools'>Performances With The Following Tools</h2>
+            <h2 className='tools'>Tools We Use For Development And Design</h2>
             <div data-aos="fade-right" duration="300" className="about-skill">
               <p>HTML CSS - 75% </p><hr style={{ width: "55%" }} />
             </div>

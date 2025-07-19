@@ -57,7 +57,7 @@ const Services = () => {
 
     return (
         <section className="services-section">
-            <h2 data-aos="fade-right" className="services-title mt-5"><span>Services I Offer</span></h2>
+            <h2 data-aos="fade-right" className="services-title mt-5"><span>Our Services</span></h2>
             <p data-aos="fade-down" className="services-intro">
                 I am a skilled and passionate web developer and designer with experience in creating
                 visually appealing and user-friendly websites. I have a strong
