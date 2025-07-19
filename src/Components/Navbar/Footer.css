@@ -15,16 +15,22 @@
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-left: 1rem;
 }
 
 .footer-section {
   flex: 1 1 300px;
-  text-align: center;
+  text-align: start;
 }
 
 .footer-section h2, 
 .footer-section h3, 
 .footer-section p {
+  text-align: start;
+}
+.footerr-section h2, 
+.footerr-section h3, 
+.footerr-section p {
   text-align: start;
 }
 
@@ -33,16 +39,16 @@
 }
 
 .footer-logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .social-icons {
   display: flex;
-  justify-content: center;
   gap: 15px;
   margin-top: 20px;
+  text-align: start;
 }
 
 .social-icon {

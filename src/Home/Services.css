@@ -4,7 +4,8 @@
     color: #ffffff;
   }
   .services-section h2 span{
-    font-size: 70px;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
     font-weight: 600;
     background: linear-gradient(287deg, #69ec7f 50.49%, #c3cf18 95.28%);
     background-clip: text;
@@ -109,11 +110,11 @@
       background-color: #1d4ed8;
       color: white;
       padding: 0.7rem 1.5rem;
+      border-radius: 2rem;
       border: none;
       width: 150%; 
       font-size: 1rem;
       font-weight: 600;
-      border-radius: 0;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.1s ease;
     }
@@ -155,7 +156,7 @@
       width: 100%; 
       font-size: 1rem;
       font-weight: 600;
-      border-radius: 0;
+      border-radius: 2rem;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.1s ease;
     }
@@ -165,10 +166,10 @@
     color: white;
     padding: 0.7rem 1.5rem;
     border: none;
-    width: 80%; 
+    width: 50%; 
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 0;
+    border-radius: 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
   }

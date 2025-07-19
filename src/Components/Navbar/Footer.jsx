@@ -23,11 +23,11 @@ const Footer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await handleFormSubmit(e); // Call Formspree's handleSubmit function
+    await handleFormSubmit(e); 
 
     if (state.succeeded) {
       setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 5000); // Hide popup after 5 seconds
+      setTimeout(() => setShowPopup(false), 5000);
     }
   };
 
@@ -63,12 +63,13 @@ const Footer = () => {
                 <span>&#10003;</span>
               </div>
               <p>Subscription Successful!</p>
+              <p>You will receive news from us daily concerning design and development</p>
             </div>
           </div>
         )}
 
         {/* Newsletter */}
-        <div className="footer-section">
+        <div className="footer-section me-3">
           <h3>Newsletter</h3>
           <p>Stay updated with our latest news and offers.</p>
           <form className="newsletter-form">
@@ -90,7 +91,6 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>© 2025 Mncconcepts. All rights reserved.</p>
-        <p>Your Surest Developer.</p>
       </div>
     </footer>
   );

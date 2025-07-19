@@ -30,7 +30,7 @@ const About = () => {
   };
 
   useEffect(() => {
-    countUp(2, setExperience, 2000);
+    countUp(3, setExperience, 2000);
     countUp(100, setJobs, 2000);
     countUp(15, setClients, 2000);
   }, []);
@@ -76,16 +76,16 @@ const About = () => {
       <div className='before-hero'>
         <div className='before-hero-text'>
           <div data-aos="fade-down">
-            <h1>More Than A Website</h1>
+            <h1> We Do More Than Just A Website</h1>
           </div>
           <p className='mb-5'>
             At our core, we specialize in developing and designing visually stunning, highly functional websites and expansive web applications tailored to meet the needs of businesses across all sectors. Our mission is to ensure that every brand we work with stands out in a competitive digital landscape. Whether it's a startup looking to establish an online presence or an established company aiming to elevate its digital branding, we bring ideas to life with precision, creativity, and technical excellence. <br /><br />
-            Over the years, we've had the privilege of helping more than 50 remarkable brands transform their digital identity through exceptional web development and cutting-edge design. Our team doesn't just create websites—we craft immersive online experiences that engage users, build trust, and drive conversions. <br /><br />
+            Over the years, we've had the privilege of helping more than 50 remarkable brands transform their digital identity through exceptional web development and cutting-edge design. Our team doesn't just create websites, we craft immersive online experiences that engage users, build trust, and drive conversions. <br /><br />
             In addition to web services, we've also successfully completed a wide array of high-quality graphic design projects for top-tier brands, enhancing their visual storytelling and marketing appeal. From user-friendly e-commerce platforms to interactive business websites, our work continues to set the standard for innovation, quality, and results in the ever-evolving world of web and graphic design.
           </p>
 
           <button className='contact-btn' onClick={() => setShowForm(true)}>
-            Book A Call With Us Now
+            Book A Call
           </button>
         </div>
       </div>

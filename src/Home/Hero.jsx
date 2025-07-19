@@ -45,10 +45,10 @@ const Hero = () => {
                 <h1>
                     <span>Welcome To <br /> Mncconcepts. <br /></span>
                 </h1>
-                <h3 className='ms-1'><span>Web Developer | UIUX Designer | Graphics</span></h3>
+                <h3 className='ms-1'><span>Web Developer | UIUX Designer </span></h3>
                 <div className="hero-action">
                     <button onClick={() => handleNavigation('/contact')} className="ms-2 clickable hero-connect">
-                        Connect with Me
+                        Send Your Messages
                     </button>
                     <button onClick={handleResumeDownload} className="ms-2 hero-resume">
                         Download Resume

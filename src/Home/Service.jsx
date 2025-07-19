@@ -18,6 +18,16 @@ const services = [
         description: "manage, track, collaborate on code",
         icon: faGithub,
     },
+     {
+        title: "ReactJS Development",
+        description: "Dynamic Frontend Solutions",
+        icon: faReact,
+    },
+    {
+        title: "Tailwind CSS",
+        description: "Utility-First Styling Framework",
+        icon: faCogs,
+    },
     {
         title: "HTML5 Development",
         description: "Structuring the Web",
@@ -38,16 +48,7 @@ const services = [
         description: "Bringing Interactivity to Life",
         icon: faJs,
     },
-    {
-        title: "ReactJS Development",
-        description: "Dynamic Frontend Solutions",
-        icon: faReact,
-    },
-    {
-        title: "Tailwind CSS",
-        description: "Utility-First Styling Framework",
-        icon: faCogs,
-    },
+   
     {
         title: "React Native",
         description: "Cross-Platform Mobile Apps",
@@ -73,7 +74,7 @@ const ServicesSection = () => {
     return (
         <section className="services-section mb-5">
             <div data-aos="fade-down" className="">
-                <h1 className="mb-5"><span>My Skills And Expertise</span></h1>
+                <h1 className="mb-5"><span>Design And Development Tools</span></h1>
             </div>
             <div className="services-container">
                 {services.map((service, index) => (

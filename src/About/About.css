@@ -6,13 +6,26 @@
   gap: 80px;
   margin: 80px 50px;
   overflow-x: hidden;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 .about-title h1 {
   position: relative;
   font-size: 80px;
   text-align: center;
+  font-weight: bold;
+  padding-top: 3rem;
+  background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tools {
+  position: relative;
+  font-size: 3rem;
+  text-align: start;
+  margin-bottom: 3rem;
   font-weight: bold;
   padding-top: 3rem;
   background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
@@ -49,13 +62,15 @@
   gap: 40px;
 }
 
-.about-para {
+.about-para p {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  text-align: center;
+  text-align: justify;
 }
 
 .about-skills {
@@ -256,7 +271,8 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(39, 236, 82, 0.2);
 }
-.project-container button{
+
+.project-container button {
   margin-bottom: 5rem;
 }
 
@@ -278,6 +294,7 @@
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -294,4 +311,3 @@
   height: auto;
   border-radius: 10px;
 }
-

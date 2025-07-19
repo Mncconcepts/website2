@@ -27,14 +27,14 @@ const About = () => {
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true; // prevent rerun
-          countUp(2, setExperience, 2000);
+          countUp(3, setExperience, 2000);
           countUp(100, setJobs, 2000);
           countUp(15, setClients, 2000);
         }
       },
       { threshold: 0.9 }
     );
-  
+
     const section = achievementsRef.current;
     if (section) observer.observe(section);
     return () => {
@@ -45,20 +45,19 @@ const About = () => {
   return (
     <div className="about">
       <div data-aos="fade-down" className="about-title">
-        <h1>About Me</h1>
+        <h1>About Us</h1>
       </div>
       <div className="about-section">
-        <div data-aos="fade-left" className="about-left">
-          <img src="/assets/profile2.jpg" alt="" />
-        </div>
         <div className="about-right">
           <div data-aos="fade-right" className="about-para">
             <p>
-              I am a web developer and designer, based frontend engineer, with expertise in frontend frameworks like HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT JS, and TAILWIND CSS.
-              A seasoned graphic designer proficient with few software like PS, AI, FIGMA, CDR. Currently expanding my skills and network in backend technologies such as DJANGO, SQL, PYTHON.
+              At our core, we specialize in developing and designing visually stunning, highly functional websites and expansive web applications tailored to meet the needs of businesses across all sectors. Our mission is to ensure that every brand we work with stands out in a competitive digital landscape. Whether it's a startup looking to establish an online presence or an established company aiming to elevate its digital branding, we bring ideas to life with precision, creativity, and technical excellence. <br /><br />
+              Over the years, we've had the privilege of helping more than 50 remarkable brands transform their digital identity through exceptional web development and cutting-edge design. Our team doesn't just create websites, we craft immersive online experiences that engage users, build trust, and drive conversions. <br /><br />
+              In addition to web services, we've also successfully completed a wide array of high-quality graphic design projects for top-tier brands, enhancing their visual storytelling and marketing appeal. From user-friendly e-commerce platforms to interactive business websites, our work continues to set the standard for innovation, quality, and results in the ever-evolving world of web and graphic design.
             </p>
           </div>
-          <div className="about-skills">
+          <div className="about-skills mb-5">
+            <h2 className='tools'>Performances With The Following Tools</h2>
             <div data-aos="fade-right" duration="300" className="about-skill">
               <p>HTML CSS - 75% </p><hr style={{ width: "55%" }} />
             </div>
@@ -66,7 +65,7 @@ const About = () => {
               <p>BOOTSTRAP - 90%</p><hr style={{ width: "95%" }} />
             </div>
             <div data-aos="fade-right" duration="700" className="about-skill">
-              <p>REACT JS - 80%</p><hr style={{ width: "55%" }} />
+              <p>REACT JS - 90%</p><hr style={{ width: "75%" }} />
             </div>
             <div data-aos="fade-right" duration="1000" className="about-skill">
               <p>JAVASCRIPT - 80%</p><hr style={{ width: "85%" }} />
@@ -78,15 +77,15 @@ const About = () => {
               <p>TAILWIND CSS - 70%</p><hr style={{ width: "50%" }} />
             </div>
             <div data-aos="fade-right" duration="1600" className="about-skill">
-              <p>FIGMA - 90%</p><hr style={{ width: "56%" }} />
+              <p>FIGMA - 90%</p><hr style={{ width: "75%" }} />
             </div>
             <div data-aos="fade-right" duration="1800" className="about-skill">
-              <p>ADOBE ILLUSTRATOR - 85%</p><hr style={{ width: "90%" }} />
+              <p>ADOBE ILLUSTRATOR - 85%</p><hr style={{ width: "70%" }} />
             </div>
           </div>
         </div>
       </div>
-      <div className="about-achievements" ref={achievementsRef}>
+      <div className="about-achievements mt-5" ref={achievementsRef}>
         <div className="about-achievement">
           <h1>{experience}+</h1>
           <p>YEARS OF EXPERIENCE</p>
@@ -102,24 +101,7 @@ const About = () => {
           <p>HAPPY CLIENTS</p>
         </div>
       </div>
-      <header className="header">
-        <div className="header-content">
-          <h1 data-aos="fade-down" className='mt-5'>My Skills And Expertise</h1>
-          <p>Programming Languages And Softwares</p>
-          <div data-aos="fade-right" className="skills">
-            <span>GitHub</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-            <span>Tailwind</span>
-            <span>JavaScript</span>
-            <span>React.js</span>
-            <span>Next.js</span>
-            <span>Figma</span>
-            <span>Adobe Illustrator</span>
-          </div>
-        </div>
-      </header>
+    
       <div className='project-container'>
         <div data-aos='fade-left' className='first-project'>
           <h1>Projects</h1>
@@ -153,10 +135,6 @@ const About = () => {
           </div>
         </div>
         <div data-aos='fade-right' className='video-section'>
-          <video controls>
-            <source src='' type='video/mp4' />
-            Your browser does not support the video tag.
-          </video>
         </div>
         <Link to='/projects'>
           <button className='contact-btn w-100' type='submit'>PROJECT-FOLIO</button>

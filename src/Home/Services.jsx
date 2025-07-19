@@ -57,12 +57,12 @@ const Services = () => {
 
     return (
         <section className="services-section">
-            <h2 data-aos="fade-right" className="services-title mt-5"><span>My Services</span></h2>
+            <h2 data-aos="fade-right" className="services-title mt-5"><span>Services I Offer</span></h2>
             <p data-aos="fade-down" className="services-intro">
                 I am a skilled and passionate web developer and designer with experience in creating
                 visually appealing and user-friendly websites. I have a strong
                 understanding of design and a keen eye for detail. I am proficient in
-                HTML, CSS, Bootstrap, Reactjs, JavaScript, Tailwind css, React Native as well as design software such as Adobe
+                Reactjs, JavaScript, Tailwind css, HTML, CSS, Bootstrap, React Native as well as design software such as Adobe
                 Photoshop, Illustrator and Figma.
             </p>
             <div className="services-container">

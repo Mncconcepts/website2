@@ -23,17 +23,17 @@ const Project = () => {
     <div className="portfolio-container">
       <header className="header">
         <div className="header-content">
-          <h1 data-aos="fade-down" className='mt-5'>My Skills And Expertise</h1>
+          <h1 data-aos="fade-down" className='mt-5'>Recent Projects We Have covered With The Folling Tools</h1>
           <div data-aos="fade-right" className="skills">
             <span>GitHub</span>
+             <span>React.js</span>
+            <span>Next.js</span>
+            <span>Figma</span>
             <span>HTML</span>
             <span>CSS</span>
             <span>Bootstrap</span>
             <span>Tailwind</span>
             <span>JavaScript</span>
-            <span>React.js</span>
-            <span>Next.js</span>
-            <span>Figma</span>
             <span>Adobe Illustrator</span>
           </div>
         </div>
