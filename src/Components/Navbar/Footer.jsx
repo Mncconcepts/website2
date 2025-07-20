@@ -40,6 +40,16 @@ const Footer = () => {
           </div>
         </div>
 
+        <a
+          href="https://wa.me/2348100000000"
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
+        </a>
+
+
         {/* Middle - Quick Links */}
         <div className="footer-links">
           <h4>Quick Links</h4>
