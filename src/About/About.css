@@ -67,7 +67,7 @@
   flex-direction: column;
   gap: 20px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 28px;
   text-align: center;
   text-align: justify;
@@ -236,6 +236,10 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .about-para p {
+    font-size: medium;
+    line-height: 2rem;
+  }
 
   .about-achievement h1 {
     font-size: 30px;
@@ -310,4 +314,27 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.showcase-wrapper {
+  display: inline-block;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, rgba(24, 24, 27, 0.7), rgba(36, 36, 42, 0.5));
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px auto;
+  transition: transform 0.3s ease;
+}
+
+.showcase-wrapper:hover {
+  transform: scale(1.03);
+}
+
+.showcase-wrapper h1 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
 }

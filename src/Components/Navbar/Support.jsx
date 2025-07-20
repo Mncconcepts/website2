@@ -8,7 +8,7 @@ const Support = () => {
     <div className="helps-section">
       <div data-aos="fade-left" className="helps-header">
         <h3 className='mt-5'>Need help?</h3>
-        <p>We are always here for you. Reach out to us anytime</p>
+        <small>We are always here for you. Reach out to us anytime, we are eager and ready to hear from you</small>
       </div>
 
       <div className="helps-cards">
@@ -36,7 +36,7 @@ const Support = () => {
               Submit a support ticket for detailed assistance on complex issues
               Our team ensures timely resolution of all your concerns
             </p>
-            <button>Submit a Ticket</button>
+            <button className='form-button'>Submit a Ticket</button>
           </div>
           <div className="helps-image">
             <img src="/profile4.png" alt="Ticket Support" />

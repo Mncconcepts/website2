@@ -101,10 +101,12 @@ const About = () => {
           <p>HAPPY CLIENTS</p>
         </div>
       </div>
-    
+
       <div className='project-container'>
+        <div className="showcase-wrapper">
+          <h1>Projects ShowCase</h1>
+        </div>
         <div data-aos='fade-left' className='first-project'>
-          <h1>Projects</h1>
           <div className='scrolling-projects-wrapper'>
             <div className='scrolling-projects'>
               <div className='first-project-card'>
@@ -137,7 +139,7 @@ const About = () => {
         <div data-aos='fade-right' className='video-section'>
         </div>
         <Link to='/projects'>
-          <button className='contact-btn w-100' type='submit'>PROJECT-FOLIO</button>
+          <button className='contact-btn w-100' type='submit'>View All Recent Projects</button>
         </Link>
       </div>
     </div>

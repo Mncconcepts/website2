@@ -19,6 +19,8 @@
 .before-hero-text p{
   text-align: start;
   text-align: justify;
+  font-size: small;
+  line-height: 1.6rem;
 }
 
 .about-achievement {

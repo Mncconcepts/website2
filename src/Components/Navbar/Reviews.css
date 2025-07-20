@@ -74,6 +74,9 @@
     text-align: center;
     padding: 0 15px;
 }
+.quest p{
+    font-size: small;
+}
 
 /* Star Rating */
 .star-rating {

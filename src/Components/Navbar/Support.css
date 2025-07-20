@@ -65,12 +65,12 @@
     margin-bottom: 20px;
 }
 
-.helps-content button {
+.helps-card button {
     background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
     color: #ffffff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5rem;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -80,6 +80,20 @@
 }
 
 @media (max-width: 768px) {
+    .helps-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helps-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .helps-image img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
     .helps-card {
         flex-direction: column;
         text-align: center;

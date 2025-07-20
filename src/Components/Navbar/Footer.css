@@ -128,6 +128,10 @@
   .newsletter-input {
     font-size: 14px;
   }
+  .footerr-section p{
+    text-align: start;
+    font-size: small;
+  }
 }
 
 /* Popups */
