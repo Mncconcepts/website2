@@ -32,53 +32,76 @@
 
 .review-card {
     flex: 0 0 auto;
-    width: 350px;
-    min-height: 300px;
-    background: #f5f5f5;
-    border-radius: 2rem;
-    padding: 20px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    min-height: auto; /* Let it grow based on content */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     scroll-snap-align: center;
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     position: relative;
+    border-left: 5px solid #5acf6e;
+    width: 350px;
+    padding: 18px 14px;
+    box-sizing: border-box;
 }
 
+
 .review-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 .reviewer-image {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #5acf6e;
+    margin-bottom: 10px;
+    border: 2px solid #5acf6e;
+    margin-top: 2rem;
 }
 
 .reviewer-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-bottom: 5px;
 }
 
 .review-text {
-    font-size: small;
-    color: #555;
-    text-align: center;
-    padding: 0 15px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
 }
+
+.review-text::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #f1f1f1;
+    border-bottom: 10px solid transparent;
+}
+
 .quest p{
     font-size: small;
 }
 
-/* Star Rating */
 .star-rating {
     font-size: 1.2rem;
     color: gold;

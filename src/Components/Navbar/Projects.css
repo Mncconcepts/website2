@@ -117,6 +117,18 @@
   .card-overlay button:hover {
     background-color: #666;
   }
+
+  .contactt-btn {
+  padding: 10px 20px;
+  background-color: #2528d1;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 6rem;
+}
   
   .footers {
     text-align: center;

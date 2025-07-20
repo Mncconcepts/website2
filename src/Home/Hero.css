@@ -193,13 +193,14 @@
 
   .hero h1 span {
     font-size: 3.2rem;
+    font-weight: 550;
     margin-top: 4rem;
     line-height: 3.8rem;
   }
 
   .hero h3 {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
     line-height: 2rem;
   }
@@ -214,7 +215,7 @@
   .hero-resume {
     width: 95%;
     margin: 0;
-    padding: 15px 20px;
+    padding: 17px 20px;
     font-size: 14px;
   }
 

@@ -30,7 +30,7 @@ const Reviews = () => {
             <div className="quest">
                     <div data-aos="fade-down" quest-text>
                         <h1>Ready to Elevate your Brand?</h1>
-                        <p>Reach us out with the button below, If your businesss is growing your website should too</p>
+                        <p>Reach us out with the button below, <br /> If your businesss is growing your website should too</p>
                         <div className="reach-button">
                             <Link to="/message">
                                 <button className="contact-btn">Contact Us</button>

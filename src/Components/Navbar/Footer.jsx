@@ -1,103 +1,82 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
   const [showPopup, setShowPopup] = useState(false);
+  const [state, handleFormSubmit] = useForm("myzkqqar");
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  const handleSubscribe = (e) => {
+    e.preventDefault();
 
-  const handleSubscribe = () => {
     if (email.trim() === "") {
       alert("Please enter a valid email address.");
       return;
     }
+
     setShowPopup(true);
     setTimeout(() => {
       setShowPopup(false);
+      setEmail("");
     }, 3000);
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
 
-    await handleFormSubmit(e);
-
-    if (state.succeeded) {
-      setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 5000);
-    }
-  };
-
-  const [state, handleFormSubmit] = useForm("myzkqqar");
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        {/* Social Icons */}
-        <div className="footerr-section">
-          <h2 className="footer-logo">MNCCONCEPTS</h2>
-          <h3>Web Developer And Designer</h3>
-          <p>Bringing ideas to reality, Providing top-notch web development and design services.</p>
-          <div className="social-icons">
-            <a href="https://www.facebook.com/profile.php" className="social-icon" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="https://x.com/Mncconcepts2" className="social-icon" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/mncconcepts" className="social-icon" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/miracle-nweze-52aab330b" className="social-icon" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
+    <footer className="modern-footer">
+      <div className="footer-content">
+        {/* Left - Branding */}
+        <div className="footer-brand">
+          <h2>MNCCONCEPTS</h2>
+          <p>Web Developer & Designer</p>
+          <p className="footer-desc">
+            We bring digital ideas to life. Let's build experiences together!
+          </p>
+          <div className="footer-socials">
+            <a href="https://facebook.com/profile.php" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Mncconcepts2" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/mncconcepts" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/miracle-nweze-52aab330b" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
           </div>
         </div>
 
-        <a
-          href="https://wa.me/2349020495756"
-          className="whatsapp-float"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-whatsapp"></i>
-        </a>
+        {/* Middle - Quick Links */}
+        <div className="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
 
-        {showPopup && (
-          <div className="popups">
-            <div className="popups-card">
-              <div className="successs-icon">
-                <span>&#10003;</span>
-              </div>
-              <p>Subscription Successful!</p>
-              <p>You will receive news from us daily concerning design and development</p>
-            </div>
-          </div>
-        )}
-
-        {/* Newsletter */}
-        <div className="footer-section me-3">
-          <h3>Newsletter</h3>
-          <p>Stay updated with our latest news and offers.</p>
-          <form className="newsletter-form">
+        {/* Right - Newsletter */}
+        <div className="footer-newsletter">
+          <h4>Subscribe to Newsletter</h4>
+          <p>Get updates on new designs, tutorials, and offers.</p>
+          <form onSubmit={handleSubscribe}>
             <input
               type="email"
-              id="email"
+              placeholder="Your Email"
               value={email}
-              onChange={handleEmailChange}
-              placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button className='contact-btn' type="button" onClick={handleSubscribe}>
-              Subscribe
-            </button>
+            <button type="submit">Subscribe</button>
           </form>
+          {showPopup && (
+            <div className="footer-popup">
+              <div className="popup-card">
+                <span className="checkmark">&#10003;</span>
+                <p>Subscription Successful!</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
-      {/* Footer Bottom */}
+      {/* Bottom */}
       <div className="footer-bottom">
         <p>© 2025 Mncconcepts. All rights reserved.</p>
       </div>
