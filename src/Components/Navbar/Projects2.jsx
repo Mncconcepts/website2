@@ -22,7 +22,7 @@ const Projects2 = () => {
       <section className="projects">
         <div className="project-grid">
           {projects.map((project) => (
-            <div data-aos="zoom-in" className="project-card" key={project.id}>
+            <div data-aos="fade-up" className="project-card" key={project.id}>
               <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>

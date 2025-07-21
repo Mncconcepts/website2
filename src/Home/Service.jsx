@@ -74,11 +74,11 @@ const ServicesSection = () => {
     return (
         <section className="services-section mb-5">
             <div data-aos="fade-down" className="">
-                <h1 className="mb-5 mt-5"><span>Framesworks And Design Tools</span></h1>
+                <h1 className="mb-5 mt-5"><span>Framework And Design Tools</span></h1>
             </div>
             <div className="services-container">
                 {services.map((service, index) => (
-                    <div data-aos="zoom-in" className="service-card" key={index}>
+                    <div data-aos="fade-up" className="service-card" key={index}>
                         <div className="icon">
                             <span> <FontAwesomeIcon icon={service.icon} size="2x" /></span>
                         </div>

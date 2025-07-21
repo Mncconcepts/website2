@@ -42,10 +42,9 @@
   left: -100%;
   width: 250px;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(17, 17, 19, 0.959), rgba(22, 22, 26, 0.979));
+  background: linear-gradient(135deg, rgb(17, 17, 19), rgb(22, 22, 26));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
   transition: left 0.3s ease;
   z-index: 999;
@@ -215,8 +214,8 @@
   }
 
   .nav-menu li {
-    font-size: 20px;
-    margin-left: 1.6rem;
+    font-size: 28px;
+    margin-left: 2rem;
   }
 
   .nav-menu ul {
@@ -249,8 +248,8 @@
   padding: 0.5rem 3rem;
   border: none;
   border-radius: 2rem;
-  margin-left: 1.9rem;
-  margin-right: -7rem;
+  margin-left: 2rem;
+  margin-right: -10rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.1s ease, background-color 0.3s ease;
