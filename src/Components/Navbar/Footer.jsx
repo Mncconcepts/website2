@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <a
-          href="https://wa.me/2348100000000"
+          href="https://wa.me/2349020495756"
           className="whatsapp-float"
           target="_blank"
           rel="noopener noreferrer"
