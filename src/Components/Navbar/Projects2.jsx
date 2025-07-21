@@ -13,16 +13,11 @@ const Projects2 = () => {
   ];
   return (
     <div className="portfolio-container">
-      <header className="header">
-        <div className="header-contentt">
-          <h1 data-aos="fade-down">Recent Projects</h1>
-        </div>
-      </header>
-
-      <section className="projects">
+     <section className="projects">
+        <h2 className='mt-4 mb-5' data-aos="fade-right">PROJECT-FOLIO</h2>
         <div className="project-grid">
           {projects.map((project) => (
-            <div data-aos="fade-up" className="project-card" key={project.id}>
+            <div data-aos="zoom-in" className="project-card" key={project.id}>
               <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
