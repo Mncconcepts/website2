@@ -26,9 +26,6 @@ const Navbar = () => {
           <li onClick={handleMenuClose} key="home">
             <Link to="/home">HOME</Link>
           </li>
-          <li onClick={handleMenuClose} key="about">
-            <Link to="/about">ABOUT</Link>
-          </li>
           <li onClick={handleMenuClose} key="services">
             <Link to="/services">SERVICES</Link>
           </li>

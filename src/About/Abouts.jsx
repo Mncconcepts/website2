@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Abouts.css';
 import { useForm, ValidationError } from '@formspree/react';
 
-const About = () => {
+const Abouts = () => {
   const [experience, setExperience] = useState(0);
   const [jobs, setJobs] = useState(0);
   const [clients, setClients] = useState(0);
@@ -155,4 +155,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Abouts;

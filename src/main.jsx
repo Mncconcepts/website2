@@ -9,7 +9,6 @@ import {
   HashRouter,
   RouterProvider,
 } from "react-router-dom";
-import About from './About/About.jsx';
 import Services from './Home/Services.jsx';
 import Projects from './Components/Navbar/Projects.jsx';
 import FAQSection from './Components/Navbar/Faq.jsx';
@@ -33,10 +32,6 @@ const router = createHashRouter([
       {
         path: "/home",
         element: <Home/>
-      },
-      {
-        path: "/about",
-        element: <About />
       },
       {
         path: "/services",
