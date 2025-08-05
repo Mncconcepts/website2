@@ -3,8 +3,8 @@
   padding: 2rem;
   color: white;
   margin-bottom: 5rem;
-  overflow-y: auto;
-  overflow-x: hidden;
+  max-width: 1270px;
+  margin: 0 auto;
 
 }
 

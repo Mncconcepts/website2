@@ -3,8 +3,8 @@ import './Projects.css';
 
 const Project = () => {
   const projects = [
-    { id: 4, title: 'Oma App', description: 'Oma crypto mining app, the feature of web 3, gaming, custome mining, entertainment', image: '/oma web2.png', Prototype:'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx', Design:'' },
-    { id: 4, title: 'Oma App', description: 'Multi-utility-token, custom mining, gaming and entertainment.' , image: '/do1.png', Prototype: 'https://www.linkedin.com/posts/mhttps://www.linkedin.com/posts/mhttps://www.linkedin.com/posts/miracle-nweze-52aab330b_web3crypto-cryptomining-uiuxdesign-activity-7358262191021588481-4Qxl', Design: '' },
+    { id: 4, title: 'Oma App', description: 'Oma crypto mining app, the feature of web 3, gaming, custome mining, entertainment', image: '/oma web2.png', livelink:'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx', githublink:'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx' },
+    { id: 4, title: 'Oma App', description: 'Multi-utility-token, custom mining, gaming and entertainment.', image: '/do1.png', livelink:'https://www.linkedin.com/posts/mhttps://www.linkedin.com/posts/mhttps://www.linkedin.com/posts/miracle-nweze-52aab330b_web3crypto-cryptomining-uiuxdesign-activity-7358262191021588481-4Qxl', githubLink: 'https://www.facebook.com/share/v/19GPLLFTHx/' },
     { id: 4, title: 'Paywith-Pi', description: 'payment web app, vast pages website with multi-dynamic-routing', image: '/do2.png', liveLink: 'https://paywith-pi.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pay-with-pi' },
     { id: 4, title: 'Pearlz-store', description: 'A shopify ecomerce skin care website, where you will discover the essence of vitality and health in one place', image: '/proj13.png', liveLink: 'https://pearlz-store.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pearlz' },
     { id: 4, title: 'Edu-Hub', description: 'Eductional website, addmission, news, updates, E-book shp for students', image: '/proj12.jpg', liveLink: 'https://edu-hub-ruddy.vercel.app', githubLink: 'https://github.com/Mncconcepts/Edu-hub' },
@@ -45,7 +45,7 @@ const Project = () => {
         <h2 className='mt-4 mb-5' data-aos="fade-right">PROJECT-FOLIO</h2>
         <div className="project-grid">
           {projects.map((project) => (
-            <div data-aos="zoom-in" className="project-card" key={project.id}>
+            <div data-aos="fade-up" className="project-card" key={project.id}>
               <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
@@ -64,7 +64,7 @@ const Project = () => {
           <li><a href="https://www.linkedin.com/in/miracle-nweze-52aab330b">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/mncconcepts">Instagram</a></li>
           <li><a href="https://github.com/Mncconcepts">GitHub</a></li>
-          <li><a href="clintonnweze111@gmail.com">E-mail</a></li>
+          <li><a href="https://www.facebook.com/share/1B1QBYC6fm/">facebook</a></li>
         </ul>
       </footer>
     </div>

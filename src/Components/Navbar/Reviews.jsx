@@ -12,7 +12,7 @@ const reviews = [
 const Reviews = () => {
     return (
         <div className='reviews-container'>
-            <div data-aos="fade-down" className='reviews-header'>
+            <div data-aos="fade-up" className='reviews-header'>
                 <h1>What Our Clients Say</h1>
             </div>
             <div className='reviews-slider'>

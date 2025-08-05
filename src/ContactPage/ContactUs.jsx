@@ -116,15 +116,15 @@ const ContactUs = () => {
 
             <div className="help-section">
                 <h3>Need help?</h3>
-                <p>We Are Always Available, Need Help? Reach Us Out</p>
+                <p>Need Help? Reach Us Out</p>
                 <div className="help-cards">
-                    <div data-aos="zoom-in" className="help-card">
+                    <div data-aos="fade-up" className="help-card">
                         <i className="fas fa-ticket-alt"></i>
                         <h4>Ticket support</h4>
                         <p>Need assistance? Submit a ticket for detailed assistance.</p>
                         <button onClick={() => setShowPopup(true)}>Learn more</button>
                     </div>
-                    <div data-aos="zoom-in" className="help-card">
+                    <div data-aos="fade-up" className="help-card">
                         <i className="fas fa-headset"></i>
                         <h4>Customer support</h4>
                         <p>Have any issue, reach us out we are ready to help you</p>
@@ -132,7 +132,7 @@ const ContactUs = () => {
                         <button>Learn more</button>
                         </Link>
                     </div>
-                    <div data-aos="zoom-in" className="help-card">
+                    <div data-aos="fade-up" className="help-card">
                         <i className="fas fa-question-circle"></i>
                         <h4>FAQ</h4>
                         <p>Check out the most frequently asked question</p>
@@ -172,7 +172,7 @@ const ContactUs = () => {
                             <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
                             <textarea name="message" placeholder="Describe your issue" value={formData.message} onChange={handleChange} required></textarea>
                             <button type="submit">Submit Ticket</button>
-                            <button type="button" onClick={() => setShowPopup(false)} className="close-btn">Close</button>
+                            <button type="buttonn" onClick={() => setShowPopup(false)} className="close-btn">Close</button>
                         </form>
                     </div>
                 </div>

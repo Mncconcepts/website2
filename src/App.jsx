@@ -106,7 +106,7 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       easing: "ease-in-out",
       once: true,
       mirror: true,

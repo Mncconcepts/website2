@@ -54,11 +54,7 @@ const services = [
         description: "Cross-Platform Mobile Apps",
         icon: faReact,
     },
-    {
-        title: "Figma Design",
-        description: "Collaborative Design Tool",
-        icon: faFigma,
-    },
+   
     {
         title: "Adobe Illustrator",
         description: "Creating Stunning Vector Graphics",

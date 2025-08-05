@@ -200,6 +200,7 @@
     transition: transform 0.1s ease, background-color 0.3s ease;
   }
 }
+  
 
 @media (max-width: 480px) {
   .navbar-left {

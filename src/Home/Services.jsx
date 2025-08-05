@@ -57,8 +57,8 @@ const Services = () => {
 
     return (
         <section className="services-section">
-            <h2 data-aos="fade-down" className="services-title mt-5 mb-3"><span>Our Services</span></h2>
-            <p data-aos="fade-down" className="services-intro">
+            <h2 data-aos="fade-up" className="services-title mt-5 mb-3"><span>Our Services</span></h2>
+            <p data-aos="fade-up" className="services-intro">
                 <p className="section-subtitle">
                     We are a skilled and passionate team of web developers and designers with 
                     expertise in building visually appealing, user-friendly, and responsive websites. 
@@ -71,7 +71,7 @@ const Services = () => {
             </p>
             <div className="services-container">
                 {services.map((service, index) => (
-                    <div data-aos="zoom-in" key={index} className="service-card">
+                    <div data-aos="fade-up" key={index} className="service-card">
                         <div className="service-icon">
                             <FontAwesomeIcon icon={service.icon} />
                         </div>
