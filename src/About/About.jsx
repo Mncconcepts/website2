@@ -87,7 +87,6 @@ const About = () => {
       </div>
       <div className="about-achievements mt-5" ref={achievementsRef}>
         <div className="about-achievement">
-          <h2 className='tools'>Experience</h2>
           <h1>{experience}+</h1>
           <p>YEARS OF EXPERIENCE</p>
         </div>
@@ -105,7 +104,7 @@ const About = () => {
 
       <div className='project-container'>
         <div className="showcase-wrapper">
-          <h1>Projects ShowCase</h1>
+          <h3>Projects ShowCase</h3>
         </div>
         <div data-aos='fade-left' className='first-project'>
           <div className='scrolling-projects-wrapper'>
