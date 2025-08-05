@@ -227,6 +227,10 @@
   .about-section img {
     width: 300px;
   }
+  .about-skills h2{
+    text-align: center;
+    font-weight: 500;
+  }
 
   .about-right {
     gap: 20px;

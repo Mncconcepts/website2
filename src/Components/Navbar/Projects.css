@@ -197,3 +197,34 @@
     }
   }
   
+  .project-card .toggle-button {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background-color: transparent;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 0 auto; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .toggle-button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+.project-card .expanded-content {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #ccc;
+  border-radius: 5px;
+}

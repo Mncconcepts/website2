@@ -78,11 +78,11 @@ const About = () => {
           <div data-aos="fade-down">
             <h1>More Than Just Websites</h1>
           </div>
-          <small className='mb-5 text-center' data-aos="fade-right">
+          <p className='mb-5'>
             At our core, we specialize in developing and designing visually stunning, highly functional websites and expansive web applications tailored to meet the needs of businesses across all sectors. Our mission is to ensure that every brand we work with stands out in a competitive digital landscape. Whether it's a startup looking to establish an online presence or an established company aiming to elevate its digital branding, we bring ideas to life with precision, creativity, and technical excellence. <br /><br />
             Over the years, we've had the privilege of helping more than 50 remarkable brands transform their digital identity through exceptional web development and cutting-edge design. Our team doesn't just create websites, we craft immersive online experiences that engage users, build trust, and drive conversions. <br /><br />
             In addition to web services, we've also successfully completed a wide array of high-quality graphic design projects for top-tier brands, enhancing their visual storytelling and marketing appeal. From user-friendly e-commerce platforms to interactive business websites, our work continues to set the standard for innovation, quality, and results in the ever-evolving world of web and graphic design.
-          </small>
+          </p>
 
           <button className='contact-btn' onClick={() => setShowForm(true)}>
             Book A Call
