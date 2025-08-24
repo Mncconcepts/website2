@@ -25,7 +25,6 @@ const PageLoader = ({ children, setLoading }) => {
 
   const isAuthPage = location.pathname === "/signup" || location.pathname === "/login";
 
-  // Automatically navigate to /home if the user lands on the root or any other path
   useEffect(() => {
     if (location.pathname === "/" || location.pathname === "/signup" || location.pathname === "/login") {
       navigate("/home", { replace: true });
@@ -89,7 +88,7 @@ const AppContent = ({ user, handleLogin }) => (
       <div className="content">
         <Outlet />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   </>
 );
@@ -117,7 +116,7 @@ const App = () => {
     <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
       <ScrollRestoration />
 
-      {loading && <Loader/>}
+      {loading && <Loader />}
 
       <PageLoader setLoading={setLoading}>
         <AppContent user={user} handleLogin={handleLogin} />

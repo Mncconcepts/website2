@@ -57,6 +57,7 @@
 .nav-menu ul {
   padding: 0;
   margin: 0;
+  margin-left: 10rem;
 }
 
 .nav-menu li {
@@ -79,7 +80,7 @@
 .nav-connect-container .nav-connect {
   background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
   color: white;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 4rem;
   border: none;
   margin-left: 1.7rem;
   font-weight: 600;
