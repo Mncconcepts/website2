@@ -19,7 +19,7 @@ const services = [
         icon: faGithub,
     },
      {
-        title: "ReactJS Development",
+        title: "ReactJS",
         description: "Dynamic Frontend Solutions",
         icon: faReact,
     },
@@ -29,7 +29,7 @@ const services = [
         icon: faCogs,
     },
     {
-        title: "HTML5 Development",
+        title: "HTML5",
         description: "Structuring the Web",
         icon: faHtml5,
     },
@@ -39,7 +39,7 @@ const services = [
         icon: faCss3Alt,
     },
     {
-        title: "Bootstrap Framework",
+        title: "Bootstrap",
         description: "Building Responsive Websites",
         icon: faBootstrap,
     },
@@ -50,9 +50,9 @@ const services = [
     },
    
     {
-        title: "React Native",
-        description: "Cross-Platform Mobile Apps",
-        icon: faReact,
+        title: "Figma",
+        description: "Designing immersive experiences",
+        icon: faFigma,
     },
    
     {

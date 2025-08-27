@@ -49,6 +49,10 @@ const Project = () => {
               <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <div className='wrapped-button'>
+              <span>Reactjs</span> <span>Tailwind css</span> <span>Bootstrap</span> <span>Django</span> <span>Figma</span> 
+              <span>JavaScript</span> <span>CSS styling</span>
+              </div>
               <div className="card-overlay">
                 <button onClick={() => window.open(project.liveLink)}>View Live</button>
                 <button onClick={() => window.open(project.githubLink)}>Design|Repository</button>

@@ -228,3 +228,22 @@
   border-left: 3px solid #ccc;
   border-radius: 5px;
 }
+
+.wrapped-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.wrapped-button span {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 20px;
+  outline: oldlace;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e0e6ed;
+}
