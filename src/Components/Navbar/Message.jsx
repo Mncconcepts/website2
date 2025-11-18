@@ -26,13 +26,14 @@ const Message = () => {
             setTimeout(() => setShowPopup(false), 5000); // Hide popup after 5 seconds
         }
     };
-    
+
     const [state, handleFormSubmit] = useForm("xbldnryn");
 
     return (
         <section className="get-in-touch">
             <div className="message-text">
                 <h1 className="text-white">Send Your Message</h1>
+                <p>use the form below to send your preferred messages.</p>
             </div>
             <form action="https://formspree.io/f/xbldnryn" data-aos="fade-up" className="contactt-form" onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Your Name" required onChange={handleChange} />
@@ -58,6 +59,8 @@ const Message = () => {
                 </div>
             )}
         </section>
+
+
     );
 };
 

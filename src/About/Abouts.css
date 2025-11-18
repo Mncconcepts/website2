@@ -10,6 +10,9 @@
   align-items: center;
   gap: 20px;
 }
+.contact-btn{
+  width: 20%;
+}
 
 .before-hero-text h1 {
   text-align: start;
@@ -408,6 +411,9 @@ hr {
 
   .about-achievement p {
     font-size: 14px;
+  }
+  .contact-btn{
+    width: 100%;
   }
 }
 

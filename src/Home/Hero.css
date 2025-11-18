@@ -281,13 +281,13 @@
   animation: slideLeft 10s infinite;
 }
 
-.icon {
+.iconn {
   font-size: 3.5rem;
   transition: transform 0.3s ease-in-out;
   opacity: 0.9;
 }
 
-.icon:hover {
+.iconn:hover {
   transform: scale(1.2);
   opacity: 1;
 }
@@ -356,7 +356,7 @@
 }
 
 @media (max-width: 768px) {
-  .icon {
+  .iconn {
     font-size: 3rem;
   }
 

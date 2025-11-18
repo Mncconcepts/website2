@@ -13,12 +13,8 @@ import { faCogs, faPaintBrush, faLink } from "@fortawesome/free-solid-svg-icons"
 import "./Service.css";
 
 const services = [
+    
     {
-        title: "Github",
-        description: "manage, track, collaborate on code",
-        icon: faGithub,
-    },
-     {
         title: "ReactJS",
         description: "Dynamic Frontend Solutions",
         icon: faReact,
@@ -28,16 +24,7 @@ const services = [
         description: "Utility-First Styling Framework",
         icon: faCogs,
     },
-    {
-        title: "HTML5",
-        description: "Structuring the Web",
-        icon: faHtml5,
-    },
-    {
-        title: "CSS3 Styling",
-        description: "Designing Beautiful Interfaces",
-        icon: faCss3Alt,
-    },
+
     {
         title: "Bootstrap",
         description: "Building Responsive Websites",
@@ -48,20 +35,25 @@ const services = [
         description: "Bringing Interactivity to Life",
         icon: faJs,
     },
-   
+
     {
         title: "Figma",
         description: "Designing immersive experiences",
         icon: faFigma,
     },
-   
+
     {
         title: "Adobe Illustrator",
         description: "Creating Stunning Vector Graphics",
         icon: faPaintBrush,
     },
-    
-    
+    {
+        title: "Github",
+        description: "manage, track, collaborate on code",
+        icon: faGithub,
+    },
+
+
 
 
 ];
@@ -78,12 +70,16 @@ const ServicesSection = () => {
                         <div className="icon">
                             <span> <FontAwesomeIcon icon={service.icon} size="2x" /></span>
                         </div>
-                        <h3>{service.title}</h3>
+                        <h5>{service.title}</h5>
                         <p>{service.description}</p>
                     </div>
                 ))}
             </div>
+
+
         </section>
+
+
     );
 };
 

@@ -59,17 +59,17 @@ const Hero = () => {
             <div data-aos="fade-up" className="hero-image-wrapper">
                 <div className="glow-circles"></div> {/* Glowing animated circles */}
                     <div className="tech-icons">
-                        <FaReact className="icon react" />
-                        <SiVite className="icon vite" />
-                        <FaJs className="icon js" />
-                        <FaBootstrap className="icon bootstrap" />
-                        <FaHtml5 className="icon html" />
-                        <FaCss3Alt className="icon css" />
-                        <SiTailwindcss className="icon tailwind" />
-                        <SiNextdotjs className="icon nextjs" />
-                        <SiFigma className="icon figma" />
-                        <SiAdobeillustrator className="icon illustrator" />
-                        <FaGithub className="icon github" />
+                        <FaReact className="iconn react" />
+                        <SiVite className="iconn vite" />
+                        <FaJs className="iconn js" />
+                        <FaBootstrap className="iconn bootstrap" />
+                        <FaHtml5 className="iconn html" />
+                        <FaCss3Alt className="iconn css" />
+                        <SiTailwindcss className="iconn tailwind" />
+                        <SiNextdotjs className="iconn nextjs" />
+                        <SiFigma className="iconn figma" />
+                        <SiAdobeillustrator className="iconn illustrator" />
+                        <FaGithub className="iconn github" />
                     </div>
                 <div className="hero-image">
                     <img src="/assets/profile3.jpg" alt="Your Brand" />

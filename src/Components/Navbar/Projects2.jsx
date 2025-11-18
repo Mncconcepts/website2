@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Projects2 = () => {
   const projects = [
+    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn1.png', Prototype: '', Design: '' },
+    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn2.png', Prototype: '', Design: '' },
+    { id: 4, title: 'CVMP', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/Storeapp2.png', Prototype: '', Design: '' },
+    { id: 4, title: 'StoreApp', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/storeapp11.png', Prototype: '', Design: '' },
     { id: 4, title: 'Oma App', description: 'Oma crypto mining app, the feature of web 3, gaming, custome mining, entertainment. users participate on tasks and gets reward for it.', image: '/oma web2.png', Prototype: 'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx', Design: '' },
     { id: 4, title: 'Pearlz-store', description: 'A shopify ecomerce skin care website, where you will discover the essence of vitality and health in one place', image: '/proj13.png', liveLink: 'https://pearlz-store.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pearlz' },
     { id: 4, title: 'Paywith-Pi', description: 'payment web app, vast pages website with multi-dynamic-routing', image: '/do2.png', liveLink: 'https://paywith-pi.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pay-with-pi' },
@@ -21,10 +25,6 @@ const Projects2 = () => {
               <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <div className='wrapped-button'>
-                <span>Reactjs</span> <span>Tailwind css</span> <span>Bootstrap</span> <span>Django</span> <span>Figma</span>
-                <span>JavaScript</span> <span>CSS styling</span>
-              </div>
               <div className="card-overlay">
                 <button onClick={() => window.open(project.liveLink)}>View Live</button>
                 <button onClick={() => window.open(project.githubLink)}>Design|Repository</button>
@@ -32,12 +32,14 @@ const Projects2 = () => {
             </div>
           ))}
         </div>
+        <div>
+           <Link to="/projects">
+          <button type='submit' className='contactt-btn mt-5'>See all Projects</button>
+        </Link>
+        </div>
       </section>
 
       <footer className="">
-        <Link to="/projects">
-          <button type='submit' className='contactt-btn'>See all Projects</button>
-        </Link>
       </footer>
     </div>
   );

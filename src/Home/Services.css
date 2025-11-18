@@ -1,186 +1,195 @@
 .services-section {
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #ffffff;
-  }
-  .services-section h2 span{
-    font-size: 2.9rem;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-    font-weight: 600;
-    background: linear-gradient(287deg, #69ec7f 50.49%, #c3cf18 95.28%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services-section h2 span {
+  font-size: 2.9rem;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+  font-weight: 600;
+  background: linear-gradient(287deg, #69ec7f 50.49%, #c3cf18 95.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quest h1 {
+  text-align: center;
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.quest p {
+  text-align: center;
+}
+
+.quest .reach-button {
+  text-align: center;
+  border-radius: 0%;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-intro {
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b3b3b3;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.services-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+
+  background: linear-gradient(135deg, #ffffff0b 0%, #f7f8fb0a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(14px);
+
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.services-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.services-iconn {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  color: #3367D8;
+}
+
+.services-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-align: start;
+}
+
+.services-content p {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  margin: 0;
+  text-align: start;
+}
+
+/* Responsiveness for medium screens */
+@media (max-width: 768px) {
+  .services-container {
+    gap: 1rem;
   }
 
-  .quest h1{
-    text-align: center;
-    margin-top: 4rem;
-    font-weight: bold;
+  .services-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
   }
-  .quest p{
-    text-align: center;
-  }
-  .quest .reach-button{
-    text-align: center;
-    border-radius: 0%;
-  }
-  
-  /* Title and Intro */
-  .services-title {
-    font-size: 2.5rem;
+
+  .services-icon {
     margin-bottom: 1rem;
   }
-  
-  .services-intro {
-    max-width: 800px;
-    margin: 0 auto 2.5rem auto;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #b3b3b3;
-  }
-  
-  /* Services container */
-  .services-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  
-  .service-card {
-    display: flex;
-    align-items: center;
-    background-color: #e4cfcf13;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  }
-  
-  .service-icon {
-    font-size: 2.5rem;
-    margin-right: 1.5rem;
-    color: #f0a500;
-  }
-  
+
   .service-content h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-    text-align: start;
+    font-size: 1.1rem;
   }
-  
+
   .service-content p {
+    font-size: 0.85rem;
+  }
+
+  .contact-btn {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    width: 150%;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-intro {
     font-size: 0.9rem;
-    color: #b3b3b3;
-    margin: 0;
-    text-align: start;
+    line-height: 1.5;
   }
-  
-  /* Responsiveness for medium screens */
-  @media (max-width: 768px) {
-    .services-container {
-      gap: 1rem;
-    }
-  
-    .service-card {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: start;
-    }
-  
-    .service-icon {
-      margin-bottom: 1rem;
-    }
-  
-    .service-content h3 {
-      font-size: 1.1rem;
-    }
-  
-    .service-content p {
-      font-size: 0.85rem;
-    }
-    .contact-btn {
-      background-color: #1d4ed8;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 2rem;
-      border: none;
-      width: 150%; 
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.1s ease;
-    }
+
+  .service-card {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
   }
-  
-  /* Responsiveness for small screens */
-  @media (max-width: 480px) {
-    .services-title {
-      font-size: 2rem;
-    }
-  
-    .services-intro {
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-  
-    .service-card {
-      padding: 1rem;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .service-icon {
-      font-size: 2rem;
-    }
-  
-    .service-content h3 {
-      font-size: 1rem;
-    }
-  
-    .service-content p {
-      font-size: 0.8rem;
-    }
-    .contact-btn {
-      background-color: #1d4ed8;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      width: 100%; 
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: 2rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.1s ease;
-    }
+
+  .service-icon {
+    font-size: 2rem;
   }
+
+  .service-content h3 {
+    font-size: 1rem;
+  }
+
+  .service-content p {
+    font-size: 0.8rem;
+  }
+
   .contact-btn {
     background-color: #1d4ed8;
     color: white;
     padding: 0.7rem 1.5rem;
     border: none;
-    width: 50%; 
+    width: 100%;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
   }
-  
-  .contact-btn:hover {
-    background-color: #2563eb; 
-  }
-  
-  .contact-btn:active {
-    transform: scale(0.98);
-  }
-  
-  
+}
+
+.contact-btn {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.contact-btn:hover {
+  background-color: #2563eb;
+}
+
+.contact-btn:active {
+  transform: scale(0.98);
+}

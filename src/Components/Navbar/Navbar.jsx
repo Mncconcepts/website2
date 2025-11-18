@@ -38,13 +38,6 @@ const Navbar = () => {
           <li onClick={handleMenuClose} key="faq">
             <Link to="/faq">FAQ</Link>
           </li>
-          <button
-            className="custom-logout-btn block lg:hidden"
-            onClick={handleMenuClose}
-            key="LogOut"
-          >
-            <Link to="/logout">Logout</Link>
-          </button>
         </ul>
       </div>
 

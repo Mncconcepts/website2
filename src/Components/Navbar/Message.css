@@ -1,91 +1,210 @@
 .contactt-form {
-    flex: 1;
-    max-width: 80%;
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #eee3e3ec;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(146, 141, 141, 0.062);
-    margin-top: 2rem;
-    margin-bottom: 8rem;
+    width: 100%;
+    max-width: 520px;
+    margin: 3rem auto 8rem auto;
+    padding: 2rem;
+
+    background: linear-gradient(135deg, #ffffff0b 0%, #f7f8fb0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(14px);
+    border-radius: 2rem;
+    transition: all .25s ease;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.contactt-form h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #1d4ed8;
+    margin-bottom: 10px;
 }
 
 .contactt-form input,
 .contactt-form textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    background: #fafafa;
+    transition: all .25s ease;
+}
+
+.contactt-form input:focus,
+.contactt-form textarea:focus {
+    border-color: #1d4ed8;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.18);
+}
+
+.contactt-form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
 .contactt-form button {
-    padding: 10px 15px;
-    background: #62ec2b;
+    padding: 12px 0;
+    background: #1d4ed8;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1rem;
-}
-.contactt-form h2{
-    text-align: center;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: .3px;
+    transition: all .28s ease;
 }
 
 .contactt-form button:hover {
-    background: #ffffff;
-    color: #000;
+    background: #163bb0;
+    transform: translateY(-2px);
 }
-.message-text h1{
+
+.message-text h1 {
     text-align: center;
-    margin-top: 7rem;
-    font-weight: bold;
-    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: white;
 }
+
+.message-text p {
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: white;
+}
+
 .popup-card {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #1d1c1ce5;
-    color: #faf8f8;
-    padding: 20px;
-    width: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    padding: 25px;
+    width: 360px;
+
+    background: rgba(20, 20, 20, 0.92);
+    color: #fafafa;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
     text-align: center;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out;
+    z-index: 999;
+    animation: fadeIn .35s ease;
 }
 
 .popup-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: .5rem;
 }
 
 .checkmark {
-    font-size: 40px;
+    font-size: 45px;
     color: #28a745;
-    font-weight: bold;
-    border: 2px solid #28a745;
+    border: 3px solid #28a745;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
+
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translate(-50%, -55%);
+        transform: translate(-50%, -58%);
     }
+
     to {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
+}
+
+
+@media (max-width: 768px) {
+    .contactt-form {
+        max-width: 92%;
+        padding: 1.4rem;
+    }
+
+    .popup-card {
+        width: 90%;
+    }
+}
+
+.form-bg-icons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.float-icon {
+    position: absolute;
+    font-size: 1.8rem;
+    opacity: 0.25;
+    color: #ffffff;
+    pointer-events: none;
+    animation: floatIcons 9s ease-in-out infinite;
+}
+
+.float-icon:nth-child(2) {
+    top: -20px;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.float-icon:nth-child(3) {
+    top: 50%;
+    left: 5%;
+    animation-delay: 2s;
+}
+
+.float-icon:nth-child(4) {
+    top: 20%;
+    right: 8%;
+    animation-delay: 4s;
+}
+
+.float-icon:nth-child(5) {
+    top: 75%;
+    right: 12%;
+    animation-delay: 6s;
+}
+
+/* ICON ANIMATION */
+@keyframes floatIcons {
+    0% {
+        transform: translateY(0px);
+        opacity: 0.15;
+    }
+
+    50% {
+        transform: translateY(-28px);
+        opacity: 0.35;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 0.15;
+    }
+}
+
+.form-bg-icons:hover .float-icon {
+    animation-play-state: paused;
 }

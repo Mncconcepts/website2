@@ -71,11 +71,11 @@ const Services = () => {
             </p>
             <div className="services-container">
                 {services.map((service, index) => (
-                    <div data-aos="fade-up" key={index} className="service-card">
-                        <div className="service-icon">
+                    <div data-aos="fade-up" key={index} className="services-card">
+                        <div className="services-iconn">
                             <FontAwesomeIcon icon={service.icon} />
                         </div>
-                        <div className="service-content">
+                        <div className="services-content">
                             <h3>{service.title}</h3>
                             <p>{service.description}</p>
                         </div>

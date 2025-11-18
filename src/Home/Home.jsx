@@ -18,7 +18,7 @@ const Home = () => {
       <Abouts/>
       <Projects2/>
       <ServicesSection/>
-      <Services/>
+      {/* <Services/> */}
       <Reviews/>
     </div>
   );

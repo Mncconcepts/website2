@@ -3,6 +3,10 @@ import './Projects.css';
 
 const Project = () => {
   const projects = [
+    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn1.png', Prototype: '', Design: '' },
+    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn2.png', Prototype: '', Design: '' },
+    { id: 4, title: 'CVMP', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/Storeapp2.png', Prototype: '', Design: '' },
+    { id: 4, title: 'StoreApp', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/storeapp11.png', Prototype: '', Design: '' },
     { id: 4, title: 'Oma App', description: 'Oma crypto mining app, the feature of web 3, gaming, custome mining, entertainment', image: '/oma web2.png', livelink:'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx', githublink:'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx' },
     { id: 4, title: 'Oma App', description: 'Multi-utility-token, custom mining, gaming and entertainment.', image: '/do1.png', livelink:'https://www.linkedin.com/posts/mhttps://www.linkedin.com/posts/mhttps://www.linkedin.com/posts/miracle-nweze-52aab330b_web3crypto-cryptomining-uiuxdesign-activity-7358262191021588481-4Qxl', githubLink: 'https://www.facebook.com/share/v/19GPLLFTHx/' },
     { id: 4, title: 'Paywith-Pi', description: 'payment web app, vast pages website with multi-dynamic-routing', image: '/do2.png', liveLink: 'https://paywith-pi.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pay-with-pi' },
