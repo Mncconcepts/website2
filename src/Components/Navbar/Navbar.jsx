@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link to="/contact">CONTACT</Link>
           </li>
           <li onClick={handleMenuClose} key="faq">
-            <Link to="/faq">FAQ</Link>
+            <Link to="/faq">FAQs</Link>
           </li>
         </ul>
       </div>

@@ -18,8 +18,8 @@
 
 .hero-text {
   max-width: 50%;
-  margin-top: -4.5rem;
-  margin-bottom: -5rem;
+  margin-top: -5rem;
+  margin-bottom: -4rem;
 }
 
 .hero-text h3 {
@@ -41,8 +41,8 @@
 }
 
 .hero h3 span {
-  font-size: 1.7rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 .hero-action {
   margin-top: 20px;
@@ -79,7 +79,6 @@
   margin-top: 7rem;
 }
 
-/* Image Styling */
 .hero-image img {
   width: 100%;
   max-width: 330px;
@@ -92,7 +91,6 @@
   margin-top: 6rem;
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .hero {
     flex-direction: row;
@@ -192,7 +190,7 @@
 
   .hero h1 span {
     font-size: 3.2rem;
-    font-weight: 550;
+    font-weight: bolder;
     margin-top: 4rem;
     line-height: 3.8rem;
   }
@@ -227,7 +225,6 @@
   }
 }
 
-/* Text Gradient */
 .hero h1 span,
 .hero h3 span {
   background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);

@@ -67,8 +67,6 @@ const ContactUs = () => {
 
             <div data-aos="fade-right" className="contact-info">
                 <div className="info-section bg-dark pb-5 pt-5">
-
-
                     <div className="info-item">
                         <i className="fas fa-map-marker-alt"></i>
                         <span>Location: Lagos, Nigeria</span>
@@ -129,7 +127,7 @@ const ContactUs = () => {
                         <h4>Customer support</h4>
                         <p>Have any issue, reach us out we are ready to help you</p>
                         <Link to="/support">
-                        <button>Learn more</button>
+                            <button>Learn more</button>
                         </Link>
                     </div>
                     <div data-aos="fade-up" className="help-card">

@@ -12,24 +12,24 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What are the latest trends in web development?",
-      answer: "Modern web development focuses on serverless architectures, edge computing, AI-powered development, and frameworks like Next.js and Svelte for faster, more dynamic experiences.",
+      question: "What are the benefits of using cloud computing for businesses?",
+      answer: "Cloud computing provides scalability, cost efficiency, remote access, enhanced security, automated backups, and faster deployment for applications and data management.",
     },
     {
-      question: "Which programming languages are in high demand?",
-      answer: "Languages like Python, JavaScript, and Rust are growing in demand due to their versatility in AI, web development, and system-level programming. TypeScript is also popular for large-scale applications.",
+      question: "What skills do modern software developers need?",
+      answer: "Full-stack knowledge, strong problem-solving skills, version control (Git), cloud deployment, API integration, testing practices, and understanding CI/CD pipelines are essential.",
     },
     {
-      question: "What are the key UI/UX design trends for 2024?",
-      answer: "Minimalist design, glassmorphism, dark mode, immersive animations, and AI-assisted UI/UX tools are shaping the future of design.",
+      question: "Are NFTs, blockchain, and Web3 still relevant?",
+      answer: "Yes blockchain technology continues to power distributed systems, digital identity, smart contracts, fintech solutions, and secure data management beyond the hype of digital art NFTs.",
     },
     {
-      question: "How is AI impacting software development?",
-      answer: "AI is revolutionizing coding with tools like GitHub Copilot and ChatGPT, automating repetitive tasks, improving debugging, and enhancing software testing.",
+      question: "How important is cybersecurity today?",
+      answer: "Cybersecurity is more critical than ever due to rising global cyber threats. Companies invest in encryption, ethical hacking, Zero-Trust frameworks, and AI-powered detection systems.",
     },
     {
-      question: "What is the future of mobile app development?",
-      answer: "Cross-platform frameworks like Flutter and React Native, progressive web apps (PWAs), and AI-driven personalization are shaping the future of mobile development.",
+      question: "What is DevOps and why does it matter?",
+      answer: "DevOps is a set of practices that integrates development and operations teams to automate processes, improve collaboration, accelerate deployment cycles, and increase reliability.",
     },
   ];
 

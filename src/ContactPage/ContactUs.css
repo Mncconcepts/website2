@@ -36,7 +36,15 @@
   
   .info-section {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff0b 0%, #f7f8fb0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(14px);
+    transition: all .25s ease;
+    cursor: pointer;
   }
   
   .info-section h3 {
@@ -64,11 +72,11 @@
   
 
   .map-section iframe {
-    width: 100%;
-    max-width: 700px;
-    height: 335px;
+    width: 120%;
+    max-width: 300px;
+    height: 350px;
     border: none;
-    border-radius: 4px;
+    border-radius: 1rem;
   }
   
 
@@ -182,7 +190,7 @@
   
   .help-card i {
     font-size: 2rem;
-    color: #f0a500;
+    color: #2368d6;
     margin-bottom: 1rem;
   }
   
@@ -413,7 +421,7 @@
   }
   
   .popup-card button {
-    background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+    background: linear-gradient(135deg, #2368d6, #1460a7);
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -425,7 +433,8 @@
   }
   
   .popup-card button:hover {
-    background: #1bee49;
+    background: #e2f3e6;
+    color:#1460a7
   }
   
   .hidden {

@@ -11,10 +11,8 @@
 
 .helps-header h3 {
     font-size: 3.5rem;
-    background: linear-gradient(267deg, #5acf6e 9.36%, #c3cf18 100%);
+    color: #ffffff;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: bold;
     margin-top: 3rem;
 }
@@ -28,16 +26,23 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
 }
 
 .helps-card {
     display: flex;
+    max-width: 1000px;
     align-items: center;
     gap: 20px;
-    background: #263238;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff0b 0%, #f7f8fb0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(14px);
+    transition: all .25s ease;
+    cursor: pointer;
 }
 
 .helps-card:nth-child(even) {
