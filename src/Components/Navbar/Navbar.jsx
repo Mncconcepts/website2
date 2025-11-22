@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Function to close the menu when an item is clicked
   const handleMenuClose = () => {
     setIsMenuOpen(false);
   };
@@ -21,23 +26,14 @@ const Navbar = () => {
           <img className='logo' src="/logo2.png" alt="Logo" />
         </Link>
       </div>
+
       <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li onClick={handleMenuClose} key="home">
-            <Link to="/home">HOME</Link>
-          </li>
-          <li onClick={handleMenuClose} key="services">
-            <Link to="/services">SERVICES</Link>
-          </li>
-          <li onClick={handleMenuClose} key="projects">
-            <Link to="/projects">PROJECTS</Link>
-          </li>
-          <li onClick={handleMenuClose} key="contact">
-            <Link to="/contact">CONTACT</Link>
-          </li>
-          <li onClick={handleMenuClose} key="faq">
-            <Link to="/faq">FAQs</Link>
-          </li>
+          <li onClick={handleMenuClose}><Link to="/home">HOME</Link></li>
+          <li onClick={handleMenuClose}><Link to="/services">SERVICES</Link></li>
+          <li onClick={handleMenuClose}><Link to="/projects">PROJECTS</Link></li>
+          <li onClick={handleMenuClose}><Link to="/contact">CONTACT</Link></li>
+          <li onClick={handleMenuClose}><Link to="/faq">FAQs</Link></li>
         </ul>
       </div>
 
@@ -47,7 +43,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Hamburger Menu */}
       <button
         className="hamburger"
         onClick={toggleMenu}

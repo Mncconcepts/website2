@@ -6,7 +6,8 @@ const reviews = [
   { id: 1, name: "Hillary", role: "Business Owner", text: "Amazing service! Highly recommended. Great attention to detail and seamless delivery process.", image: "/user1.png", rating: 5 },
   { id: 2, name: "Jane Smith", role: "Founder - JS Tech", text: "Professional and very responsive. They understood our brand needs perfectly.", image: "/user1.png", rating: 4 },
   { id: 3, name: "Alice Johnson", role: "Entrepreneur", text: "Great experience, MNCconcepts delivers beyond expectations.", image: "/user1.png", rating: 5 },
-  { id: 4, name: "Bob Brown", role: "Creative Director", text: "Exceptional quality and timely delivery. I will work with them again.", image: "/user1.png", rating: 4 }
+  { id: 4, name: "Bob Brown", role: "Creative Director", text: "Exceptional quality and timely delivery. I will work with them again.", image: "/user1.png", rating: 4 },
+   { id: 1, name: "Hillary", role: "Business Owner", text: "Amazing service! Highly recommended. Great attention to detail and seamless delivery process.", image: "/user1.png", rating: 5 }
 ];
 
 const Reviews = () => {
@@ -16,18 +17,18 @@ const Reviews = () => {
   useEffect(() => {
     const slider = sliderRef.current;
     let interval = setInterval(() => {
-      if (slider) slider.scrollLeft += 310;
-      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-        slider.scrollLeft = 0;
+      if (slider) slider.scrollRight += 310;
+      if (slider.scrollRight + slider.clientWidth >= slider.scrollWidth) {
+        slider.scrollRight = 0;
       }
     }, 2600);
 
     slider.addEventListener("mouseenter", () => clearInterval(interval));
     slider.addEventListener("mouseleave", () => {
       interval = setInterval(() => {
-        if (slider) slider.scrollLeft += 310;
-        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-          slider.scrollLeft = 0;
+        if (slider) slider.scrollRight += 310;
+        if (slider.scrollRight + slider.clientWidth >= slider.scrollWidth) {
+          slider.scrollRight = 0;
         }
       }, 2600);
     });

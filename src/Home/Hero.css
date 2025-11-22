@@ -51,19 +51,22 @@
 }
 
 .hero-connect {
-  padding: 15px 25px;
+  padding: 13px 44px;
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s ease;
   background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+  color: #3a3939;
+  font-weight: bold;
 }
 
 .hero-resume {
   border: 2px solid #fff;
-  padding: 15px 25px;
+  padding: 13px 28px;
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s ease;
+  font-weight: 500;
 }
 
 .hero-connect:hover {
@@ -154,7 +157,7 @@
   .hero h3 span {
     font-size: 1.2rem;
      text-align: center;
-     font-weight: 400;
+     font-weight: 500;
   }
 
   .hero-image img {
@@ -212,7 +215,7 @@
   .hero-resume {
     width: 95%;
     margin: 0;
-    padding: 17px 20px;
+    padding: 15px 20px;
     font-size: 14px;
   }
 

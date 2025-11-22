@@ -78,7 +78,8 @@
 }
 
 .nav-connect-container .nav-connect {
-  background: linear-gradient(135deg, #2368d6, #1460a7);
+  background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
+  color: #000;
   color: white;
   padding: 0.5rem 4rem;
   border: none;
@@ -88,6 +89,10 @@
   cursor: pointer;
   transition: transform 0.1s ease, background-color 0.3s ease;
   text-decoration: none;
+}
+.nav-connect-container .nav-connect:hover {
+  background-color: #ffffff;
+  color: #363434;
 }
 
 .hamburger {
@@ -201,7 +206,7 @@
     transition: transform 0.1s ease, background-color 0.3s ease;
   }
 }
-  
+
 
 @media (max-width: 480px) {
   .navbar-left {
@@ -269,3 +274,4 @@
   color: inherit;
   text-decoration: none;
 }
+

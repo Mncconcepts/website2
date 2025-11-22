@@ -85,7 +85,7 @@ const Hero = () => {
 
             <div className='next-button'>
                 <div className='next-button'>
-                    <Link to="/about">
+                    <Link to="/services">
                         <button className='btn btn-outline-light' type='submit'>Explore</button>
                     </Link>
                 </div>

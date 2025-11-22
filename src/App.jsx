@@ -14,7 +14,7 @@ import Loader from "./Components/Navbar/Loader";
 import SignUp from "./Components/Navbar/SignUp";
 import Login from "./Components/Navbar/Login";
 import Footer from "./Components/Navbar/Footer";
-import Navbar from "./Components/Navbar/Navbar"
+import Navbar from "./Components/Navbar/Navbar";
 
 const Home = () => <h1></h1>;
 
@@ -23,14 +23,17 @@ const PageLoader = ({ children, setLoading }) => {
   const navigate = useNavigate();
   const [showContent, setShowContent] = useState(false);
 
-  const isAuthPage = location.pathname === "/signup" || location.pathname === "/login";
+  const isAuthPage =
+    location.pathname === "/signup" || location.pathname === "/login";
 
+  // Handle first load and redirect
   useEffect(() => {
-    if (location.pathname === "/" || location.pathname === "/signup" || location.pathname === "/login") {
+    if (location.pathname === "/") {
       navigate("/home", { replace: true });
     }
   }, [location, navigate]);
 
+  // Page loading animation with AOS refresh
   useEffect(() => {
     setLoading(true);
     setShowContent(false);
@@ -38,6 +41,7 @@ const PageLoader = ({ children, setLoading }) => {
     const timer = setTimeout(() => {
       setLoading(false);
       setShowContent(true);
+      AOS.refresh(); // refresh animations each page change
     }, 1000);
 
     return () => clearTimeout(timer);
@@ -45,8 +49,6 @@ const PageLoader = ({ children, setLoading }) => {
 
   return showContent ? children : null;
 };
-
-
 
 const ScrollRestoration = () => {
   const location = useLocation();
@@ -59,8 +61,6 @@ const ScrollRestoration = () => {
       if (savedPosition) {
         window.scrollTo(0, parseInt(savedPosition, 10));
       }
-    } else {
-      window.scrollTo(0, 0);
     }
 
     const handleScroll = () => {
@@ -80,10 +80,11 @@ const AppContent = ({ user, handleLogin }) => (
   <>
     <Navbar user={user} />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/signup" element={<SignUp onLogin={handleLogin} />} />
       <Route path="/login" element={<Login onLogin={handleLogin} />} />
     </Routes>
+
     <div className="main-container">
       <div className="content">
         <Outlet />
@@ -97,7 +98,6 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
-  const location = useLocation();
 
   const handleLogin = (profile) => {
     setUser(profile);
