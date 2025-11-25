@@ -13,12 +13,13 @@ import { faCogs, faPaintBrush, faLink } from "@fortawesome/free-solid-svg-icons"
 import "./Service.css";
 
 const services = [
-    
+
     {
-        title: "ReactJS",
-        description: "Dynamic Frontend Solutions",
-        icon: faReact,
+        title: "Adobe Illustrator",
+        description: "Creating Stunning Vector Graphics",
+        icon: faPaintBrush,
     },
+    
     {
         title: "Tailwind CSS",
         description: "Utility-First Styling Framework",
@@ -36,17 +37,18 @@ const services = [
         icon: faJs,
     },
 
-    {
+     {
         title: "Figma",
         description: "Designing immersive experiences",
         icon: faFigma,
     },
 
-    {
-        title: "Adobe Illustrator",
-        description: "Creating Stunning Vector Graphics",
-        icon: faPaintBrush,
+     {
+        title: "ReactJS",
+        description: "Dynamic Frontend Solutions",
+        icon: faReact,
     },
+
     {
         title: "Github",
         description: "manage, track, collaborate on code",
