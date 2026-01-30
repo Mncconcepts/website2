@@ -45,7 +45,7 @@ const Hero = () => {
                 <h1>
                     <span>Building Experiences<br />That Works <br /></span>
                 </h1>
-                <h3 className='ms-1'><span>From wireframe to launch, We bring ideas to life with clean code and bold design.</span></h3>
+                <h3 className='ms-1'><span>From research, mapping userflows, low and high fidelity design, wireframe, to launch, We bring ideas to life with clean code and bold design.</span></h3>
                 <div className="hero-action">
                     <button onClick={() => handleNavigation('/contact')} className="ms-2 clickable hero-connect">
                         Contact Us Now

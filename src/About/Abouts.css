@@ -10,20 +10,24 @@
   align-items: center;
   gap: 20px;
 }
-.contact-btn{
-  width: 20%;
+
+.contact-btn {
+  width: 50%;
+  text-align: center;
+  margin-left: 10rem;
 }
 
 .before-hero-text h1 {
-  text-align: start;
+  text-align: center;
   font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .before-hero-text p {
-  text-align: start;
-  text-align: justify;
+  text-align: center;
   font-size: small;
   line-height: 1.6rem;
+  max-width: 700px;
 }
 
 .about-achievement {
@@ -81,7 +85,7 @@ hr {
 
 .modal-content {
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 2rem;
   width: 90%;
   max-width: 500px;
@@ -93,6 +97,7 @@ hr {
     transform: translateY(-20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -153,11 +158,13 @@ hr {
     opacity: 0;
     transform: translate(-50%, -20px);
   }
+
   to {
     opacity: 1;
     transform: translate(-50%, 0);
   }
 }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -226,7 +233,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 28px;
   text-align: center;
@@ -374,6 +381,13 @@ hr {
 }
 
 @media (max-width: 480px) {
+
+  .before-hero-text p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5rem;
+  }
+
   .about {
     margin: 20px 20px;
     gap: 60px;
@@ -387,7 +401,8 @@ hr {
   .about-section img {
     width: 300px;
   }
-  .about-skills h2{
+
+  .about-skills h2 {
     text-align: center;
     font-weight: 500;
   }
@@ -400,8 +415,9 @@ hr {
     font-size: 14px;
     line-height: 20px;
   }
+
   .about-para p {
-    font-size: medium;
+    font-size: 10px;
     line-height: 2rem;
   }
 
@@ -412,8 +428,11 @@ hr {
   .about-achievement p {
     font-size: 14px;
   }
-  .contact-btn{
+
+  .contact-btn {
     width: 100%;
+    text-align: center;
+    margin-left: -0.2rem;
   }
 }
 
@@ -505,5 +524,3 @@ hr {
   margin: 0;
   letter-spacing: 1px;
 }
-
-

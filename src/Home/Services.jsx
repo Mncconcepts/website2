@@ -73,7 +73,7 @@ const Services = () => {
                     <p>Reach us out with the button below</p>
                     <div className="reach-button">
                         <Link to="/message">
-                            <button className="contact-btn">Contact Us</button>
+                            <button className="contact-btnn">Contact Us</button>
                         </Link>
                     </div>
                 </div>

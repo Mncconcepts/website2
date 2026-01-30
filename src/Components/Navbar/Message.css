@@ -8,7 +8,7 @@
     border: 1px solid rgba(255, 255, 255, 0.10);
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(14px);
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     transition: all .25s ease;
     cursor: pointer;
 
@@ -28,20 +28,18 @@
 .contactt-form input,
 .contactt-form textarea {
     width: 100%;
-    padding: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+    border-radius: 9px;
     font-size: 0.95rem;
-    background: #fafafa;
+    background-color: transparent;
     transition: all .25s ease;
 }
 
 .contactt-form input:focus,
 .contactt-form textarea:focus {
-    border-color: #1d4ed8;
+    border: 1px solid #1d4ed8;
     outline: none;
-    background: #ffffff;
-    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.18);
 }
 
 .contactt-form textarea {
@@ -187,7 +185,6 @@
     animation-delay: 6s;
 }
 
-/* ICON ANIMATION */
 @keyframes floatIcons {
     0% {
         transform: translateY(0px);

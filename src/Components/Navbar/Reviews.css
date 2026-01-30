@@ -30,10 +30,10 @@
   min-width: 300px;
   padding: 1.2rem;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
-  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(15px);
-  box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: transform .28s ease;
 }
@@ -88,16 +88,18 @@
   margin-top: 3rem;
 }
 
-.contact-btn {
+.contact-btnn {
   background: #2528d1;
   padding: 0.7rem 1.5rem;
   border-radius: 50px;
+  width: 30%;
   border: none;
   color: #fff;
   cursor: pointer;
   transition: .25s;
 }
-.contact-btn:hover {
+
+.contact-btnn:hover {
   background: #244faa;
 }
 
@@ -106,7 +108,29 @@
   .review-card {
     min-width: 260px;
   }
+
   .reviews-header h1 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    min-width: 260px;
+  }
+
+  .reviews-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-btnn {
+    background: #2528d1;
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .25s;
   }
 }

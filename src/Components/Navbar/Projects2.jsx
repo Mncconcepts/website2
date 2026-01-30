@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Projects2 = () => {
   const projects = [
-    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn1.png', Prototype: '', Design: '' },
-    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn2.png', Prototype: '', Design: '' },
-    { id: 4, title: 'CVMP', description: 'CVMP is an official online marketplace designed to digitize and organize the trading ecosystem of Computer Village, Ikeja home to over 10,000 ICT vendors and millions in annual transactions.', image: '/Storeapp2.png', Prototype: '', Design: '' },
+    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn4.png', Prototype: '', Design: '' },
+    { id: 4, title: 'Dapstore', description: 'Multiple vendor store, seamless and intuitive experience, curated to solve users need, from extensive research to userflows, wireframes and prototyping', image: '/projn5.png', Prototype: '', Design: '' },
+    { id: 4, title: 'CVMP', description: 'CVMP is an official online marketplace designed to digitize and organize the trading ecosystem of Computer Village, Ikeja home to over 10,000 ICT vendors and millions in annual transactions.', image: '/projn6.png', Prototype: '', Design: '' },
     { id: 4, title: 'StoreApp', description: 'A comprehensive e-commerce and community platform created to improve safety, transparency, and growth within the Computer Village trading ecosystem.', image: '/storeapp11.png', Prototype: '', Design: '' },
     { id: 4, title: 'Oma App', description: 'Oma crypto mining app, the feature of web 3, gaming, custome mining, entertainment. users participate on tasks and gets reward for it.', image: '/omaweb2.png', Prototype: 'https://www.linkedin.com/posts/miracle-nweze-52aab330b_comingsoon-cryptomining-uiuxdesign-activity-7356634440334303232-QAgx', Design: '' },
     { id: 4, title: 'Pearlz-store Website', description: 'A shopify ecomerce skin care website, where you will discover the essence of vitality and health in one place', image: '/proj13.png', liveLink: 'https://pearlz-store.vercel.app', githubLink: 'https://github.com/Mncconcepts/Pearlz' },

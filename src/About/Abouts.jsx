@@ -30,7 +30,7 @@ const Abouts = () => {
   };
 
   useEffect(() => {
-    countUp(3, setExperience, 2000);
+    countUp(4, setExperience, 2000);
     countUp(100, setJobs, 2000);
     countUp(15, setClients, 2000);
   }, []);

@@ -7,18 +7,16 @@
     margin: 0;
   }
   
-  /* Form container */
   .forms-container {
     width: 100%;
     max-width: 400px;
     background: rgba(255, 255, 255, 0.95);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
     text-align: center;
   }
   
-  /* Form header */
   .forms-header {
     margin-bottom: 20px;
   }
@@ -36,7 +34,6 @@
     text-align: center;
   }
   
-  /* Form group */
   .forms-group {
     position: relative;
     margin-bottom: 20px;
@@ -65,7 +62,6 @@
     color: #f39c12;
   }
   
-  /* Error messages */
   .errors-message {
     color: red;
     font-size: 14px;
@@ -73,7 +69,6 @@
     text-align: left;
   }
   
-  /* Signup button */
   .signup-button {
     width: 100%;
     background: linear-gradient(267deg, #5acf6e 0.36%, #c3cf18);
@@ -90,7 +85,6 @@
     background: #e2b162;
   }
   
-  /* Form footer */
   .forms-footer {
     margin-top: 20px;
     font-size: 14px;
@@ -106,7 +100,6 @@
     text-decoration: underline;
   }
   
-  /* Responsive design */
   @media (max-width: 768px) {
     .forms-container {
       max-width: 300px;
@@ -121,7 +114,6 @@
     }
   }
 
-  /* Circle loader styles */
 .circles-loader {
   width: 50px;
   height: 50px;
@@ -131,7 +123,6 @@
   animation: spin 1s linear infinite;
 }
 
-/* Success container styles */
 .success-container {
   text-align: center;
 }
@@ -144,7 +135,7 @@
   background-color: #4caf50;
   position: relative;
   opacity: 0;
-  animation: checkmark 0.5s forwards 1.5s; /* Delay after circle loader */
+  animation: checkmark 0.5s forwards 1.5s;
 }
 
 .checkmarks.draw::after {
@@ -166,12 +157,10 @@
   font-weight: bold;
 }
 
-/* Hide elements initially */
 .hidden {
   display: none;
 }
 
-/* Keyframe for rotating the circle loader */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -181,7 +170,6 @@
   }
 }
 
-/* Keyframe for drawing checkmark */
 @keyframes checkmark {
   0% {
     opacity: 0;

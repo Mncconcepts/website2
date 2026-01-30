@@ -22,7 +22,7 @@ const Support = () => {
               Our friendly support team is available 24/7 to assist you with any queries
               Feel free to contact us via chat email or phone
             </p>
-            <Link to="/contact">
+            <Link to="/message">
               <button>Contact Support</button>
             </Link>
           </div>
